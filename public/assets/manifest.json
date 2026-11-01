@@ -1,0 +1,1460 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-01T05:16:26.163Z",
+  "scenes": {
+    "earth-opening": {
+      "id": "earth-opening",
+      "prompts": {
+        "image": [
+          {
+            "rev": 1,
+            "kind": "image",
+            "fields": {
+              "scene": "Planet Earth seen from deep space, a large sunlit crescent with the night side falling into darkness and faint warm city lights along the terminator. A razor-thin luminous blue atmosphere wraps the limb. Real weather systems, not painted clouds.",
+              "style": "Photoreal large-format documentary photography, Alexa 65 look, Master Prime optics, fine natural film grain, true-to-life textures, restrained and unstylized, the realism of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Eye level with the planet, 85 mm equivalent, from far enough that the curve dominates the right side of frame.",
+              "cameraMove": "None. The composition should imply slow rotation and stillness.",
+              "lighting": "Single hard sun from camera left, slightly behind the planet. No fill at all: the shadow side is true black except for city lights and a whisper of earthshine.",
+              "composition": "Earth occupies the right 55% of frame and bleeds off the right edge. The left 45% is empty starfield, kept calm for a large title. Horizon arc runs top right to bottom center.",
+              "environment": "Deep space with a sparse, realistic starfield. No nebula, no galaxy band, no planets, no moon.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Atmosphere reads as blue #7FB8E8 fading to black within a hair-thin band. Only the terminator gets a trace of orange.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Physically correct Rayleigh scattering at the limb. Soft sun bloom only where the sun touches the limb. No stylized glow.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "Single still image, no motion.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, nebula, galaxy clouds, oversized stars, fantasy space art, fake cyan rim, moon, spacecraft",
+              "continuity": "This frame sets the reference for Earth in Chapter 7. Keep this exact sun direction and atmosphere color for the finale."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          }
+        ],
+        "video": [
+          {
+            "rev": 1,
+            "kind": "video",
+            "fields": {
+              "scene": "Earth from deep space, slowly rotating, clouds drifting almost imperceptibly while the terminator creeps forward. City lights flicker very faintly along the night side.",
+              "style": "Photoreal large-format documentary cinematography, Alexa 65 look, 24 fps with a natural 180 degree shutter, fine film grain, physically plausible motion, the restraint of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Level with the planet, long lens compression, Earth filling the right of frame.",
+              "cameraMove": "An extremely slow push-in, no more than 6% over the whole clip, as steady as an orbit. No rotation of the camera itself.",
+              "lighting": "Single hard sun from camera left, slightly behind the planet, with true black shadows. The light does not change during the shot.",
+              "composition": "Earth right of center, left 45% of frame stays empty starfield for typography throughout the clip.",
+              "environment": "Deep space with sparse, realistic stars. Stars hold still relative to the camera.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Keep the blue confined to the thin limb.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Cloud motion only over the planet surface, slow and continuous. Rayleigh limb glow stays stable with no pulsing.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, spinning planet, fast clouds, stars streaking",
+              "continuity": "Use the approved earth-opening image as the first frame. The final frame should still be calm enough to hold on."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          }
+        ]
+      },
+      "assets": []
+    },
+    "atmosphere": {
+      "id": "atmosphere",
+      "prompts": {
+        "image": [
+          {
+            "rev": 1,
+            "kind": "image",
+            "fields": {
+              "scene": "High altitude view above a broken cloud deck at low sun. Clean deep blue overhead gives way, toward the horizon, to a thick dirty amber and gray band of pollution lying over the land. Fine particulate haze is just visible in the slanting light.",
+              "style": "Photoreal large-format documentary photography, Alexa 65 look, Master Prime optics, fine natural film grain, true-to-life textures, restrained and unstylized, the realism of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Looking toward the horizon from about 9,000 m, slight downward tilt, 35 mm equivalent, like a window seat with no window.",
+              "cameraMove": "None. Compose with forward depth so the eye travels toward the horizon.",
+              "lighting": "A single low sun, 5 degrees above the horizon and slightly right of center, weakened and reddened by the haze. Backlight rims the clouds in dull gold.",
+              "composition": "Horizon at the lower third. The left 45% of the sky stays calm and dark enough for large white text. Clouds lead in from the lower corners.",
+              "environment": "Layered stratocumulus below, thin cirrus above, and a visible brown-gray inversion layer sitting on the distant landscape.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Top of frame blue, fading through desaturated gray to dirty amber at the horizon. Keep overall exposure low.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm. Slightly lifted, dirty shadows near the horizon, where the air is thickest.",
+              "vfx": "Real atmospheric perspective with distance. Barely visible fine dust motes in the sun shafts, never bokeh confetti.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "Single still image, no motion.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, airplane wing, window frame, fantasy sky, god rays as a pattern, orange sunset poster, clean white clouds only",
+              "continuity": "Same sun direction as the end of the Earth dive: low and ahead. The horizon line stays at the lower third, because the 3D cloud deck matches it."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          }
+        ],
+        "video": [
+          {
+            "rev": 1,
+            "kind": "video",
+            "fields": {
+              "scene": "The camera descends slowly through broken cloud at low sun. As it sinks, the color drains from clean blue to gray and the air thickens with fine particulate haze, until the sun is a dull disc in dirty air.",
+              "style": "Photoreal large-format documentary cinematography, Alexa 65 look, 24 fps with a natural 180 degree shutter, fine film grain, physically plausible motion, the restraint of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Toward the horizon with a slight downward tilt, 35 mm equivalent.",
+              "cameraMove": "A slow forward and downward drift, as smooth as a glider, about 10% of frame travel over the clip. No turns, no roll.",
+              "lighting": "A low sun ahead that weakens and reddens as the haze thickens across the clip. The change is gradual and continuous.",
+              "composition": "Horizon holds at the lower third until the haze swallows it. Left side stays calm for text.",
+              "environment": "Passing through thin cloud layers into a thick brown-gray inversion layer.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Starts blue, ends gray with a dim amber sun. The transition is the whole shot.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Volumetric cloud parting naturally around the camera, with soft edges. Fine particulate becomes slowly more visible, drifting with the wind.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, turbulence, cloud tunnel effect, speed lines, snow-like particles",
+              "continuity": "Use the approved atmosphere image as the first frame. The last frame, thick gray air with a dim sun, becomes the first frame reference for polluted-city."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          },
+          {
+            "rev": 2,
+            "kind": "video",
+            "fields": {
+              "scene": "The camera descends slowly through broken cloud at low sun. As it sinks, the color drains from clean blue to gray and the air thickens with fine particulate haze, until the sun is a dull disc in dirty air. Keep the sun exactly where it is in the first frame, right of center. The dark band of pollution slowly thickens and rises until it covers the sun, while the blue overhead drains to gray. The clouds keep their shape and drift only slowly.",
+              "style": "Photoreal large-format documentary cinematography, Alexa 65 look, 24 fps with a natural 180 degree shutter, fine film grain, physically plausible motion, the restraint of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Toward the horizon with a slight downward tilt, 35 mm equivalent.",
+              "cameraMove": "A slow forward and downward drift, as smooth as a glider, about 10% of frame travel over the clip. No turns, no roll.",
+              "lighting": "A low sun ahead that weakens and reddens as the haze thickens across the clip. The change is gradual and continuous.",
+              "composition": "Horizon holds at the lower third until the haze swallows it. Left side stays calm for text.",
+              "environment": "Passing through thin cloud layers into a thick brown-gray inversion layer.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Starts blue, ends gray with a dim amber sun. The transition is the whole shot.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Volumetric cloud parting naturally around the camera, with soft edges. Fine particulate becomes slowly more visible, drifting with the wind.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, turbulence, cloud tunnel effect, speed lines, snow-like particles",
+              "continuity": "Use the approved atmosphere image as the first frame. The last frame, thick gray air with a dim sun, becomes the first frame reference for polluted-city."
+            },
+            "createdAt": "2026-11-01T01:56:02.689Z",
+            "author": "claude",
+            "trigger": "chat",
+            "basedOn": 1,
+            "summary": "Tailored to the approved look of the atmosphere image: the sun stays right of center and the pollution band rises to cover it.",
+            "changes": [
+              {
+                "field": "scene",
+                "before": "The camera descends slowly through broken cloud at low sun. As it sinks, the color drains from clean blue to gray and the air thickens with fine particulate haze, until the sun is a dull disc in dirty air.",
+                "after": "The camera descends slowly through broken cloud at low sun. As it sinks, the color drains from clean blue to gray and the air thickens with fine particulate haze, until the sun is a dull disc in dirty air. Keep the sun exactly where it is in the first frame, right of center. The dark band of pollution slowly thickens and rises until it covers the sun, while the blue overhead drains to gray. The clouds keep their shape and drift only slowly.",
+                "why": "The image put the sun further right than the brief, so the video must hold it there and let the band do the storytelling."
+              }
+            ]
+          }
+        ]
+      },
+      "assets": [
+        {
+          "id": "5474e848-ef53-4ca6-bb08-019b77475979",
+          "kind": "image",
+          "version": 1,
+          "file": "atmosphere/atmosphere__image__v001.png",
+          "originalName": "View_of_pollution_above_clouds_e6594cea_2K-clean.png",
+          "bytes": 4522509,
+          "mime": "image/png",
+          "width": 2752,
+          "height": 1536,
+          "promptRev": 1,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T03:34:25.719Z",
+          "reviewedAt": "2026-11-01T03:36:11.203Z",
+          "web": {
+            "image": "atmosphere/web/atmosphere__image__v001__1920.webp",
+            "imagePhone": "atmosphere/web/atmosphere__image__v001__960.webp"
+          }
+        },
+        {
+          "id": "ae86c37d-2c75-43de-b87a-e5c074884559",
+          "kind": "video",
+          "version": 1,
+          "file": "atmosphere/atmosphere__video__v001.mp4",
+          "originalName": "Haze_obscuring_sun_through_clouds_75b8aeab_1080p_gwr_video_mvp.mp4",
+          "bytes": 8685567,
+          "mime": "video/mp4",
+          "width": 1920,
+          "height": 1080,
+          "durationSec": 7.93,
+          "promptRev": 2,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T03:34:25.911Z",
+          "reviewedAt": "2026-11-01T03:36:13.836Z",
+          "web": {
+            "video": "atmosphere/web/atmosphere__video__v001__720.mp4",
+            "videoPhone": "atmosphere/web/atmosphere__video__v001__480.mp4",
+            "poster": "atmosphere/web/atmosphere__video__v001__poster.webp"
+          }
+        }
+      ]
+    },
+    "polluted-city": {
+      "id": "polluted-city",
+      "prompts": {
+        "image": [
+          {
+            "rev": 1,
+            "kind": "image",
+            "fields": {
+              "scene": "A vast industrial city at dusk under heavy smog, seen from above. Smokestacks and a cooling tower release slow plumes, an elevated highway full of headlights cuts through the middle, tower cranes stand over a construction site raising pale dust, and dense apartment blocks fade into brown haze.",
+              "style": "Photoreal large-format documentary photography, Alexa 65 look, Master Prime optics, fine natural film grain, true-to-life textures, restrained and unstylized, the realism of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Aerial, 120 m above the rooftops, gentle downward angle, 50 mm equivalent for slight compression.",
+              "cameraMove": "None. Layer foreground, midground and background so depth reads strongly.",
+              "lighting": "Last light from a low sun behind the haze, plus practical sodium street lights, window lights and red aviation lights beginning to show. A dull orange flare stack burns in the distance.",
+              "composition": "Upper 35% of frame is hazy sky, left clear for a title at top left. Stacks on the right third, highway on a lead-in diagonal, construction dust at lower left, all sources readable in one frame.",
+              "environment": "Generic, unidentifiable industrial megacity, with no recognizable landmarks, no real company names, mixed residential and heavy industry.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Brown-gray haze, sodium orange points of light, cold blue only in deep shadow.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm. Haze lifts the far blacks, so distance reads as lost contrast.",
+              "vfx": "Plumes rise and flatten against an inversion layer, as they really do. Smoke is soft, volumetric and wind-sheared, not cartoon puffs.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "Single still image, no motion.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, apocalyptic ruins, fire everywhere, dystopian sci-fi towers, flying vehicles, recognizable skyline, tilt-shift miniature look",
+              "continuity": "The sun position matches the end of the atmosphere clip. Haze color matches the atmosphere last frame so the cut is invisible."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          },
+          {
+            "rev": 2,
+            "kind": "image",
+            "fields": {
+              "scene": "The dirty dusk sky over a vast industrial city, seen from high on a rooftop looking toward the low sun. Thick layered brown-gray smog fills the sky, and a dull orange sun sits low in the haze. Far in the distance, a faint skyline of apartment towers, smokestacks and one cooling tower dissolves into the air, with slow plumes rising and flattening against an inversion layer.",
+              "style": "Photoreal large-format documentary photography, Alexa 65 look, Master Prime optics, fine natural film grain, true-to-life textures, restrained and unstylized, the realism of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "From high on a rooftop, camera level and looking straight at the horizon, 50 mm equivalent.",
+              "cameraMove": "None. Depth comes from layers of haze, with each band of skyline paler than the one in front of it.",
+              "lighting": "Last light from a low sun behind thick haze, right of center. No hard shadows. A few faint red aircraft lights on the distant stacks.",
+              "composition": "Horizon just below the middle of frame, about 58% down. Below it is only a dark hazy blur of distant rooftops, because a 3D city will cover that area. The sky fills most of the frame and carries the image. Keep the upper left calm enough for large white text. Sun right of center.",
+              "environment": "A generic, unidentifiable industrial megacity far in the distance, with no recognizable landmarks, no real company names, and nothing in sharp detail closer than several kilometres.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Brown-gray haze, sodium orange points of light, cold blue only in deep shadow.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm. Haze lifts the far blacks, so distance reads as lost contrast.",
+              "vfx": "Plumes rise and flatten against an inversion layer, as they really do. Smoke is soft, volumetric and wind-sheared, not cartoon puffs.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "Single still image, no motion.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, apocalyptic ruins, fire everywhere, dystopian sci-fi towers, flying vehicles, recognizable skyline, tilt-shift miniature look, foreground buildings, street-level detail, top-down aerial view, sharp city detail",
+              "continuity": "Use the approved atmosphere image as a color reference, so the haze color and the sun position carry straight on from Chapter 2. This plate sits behind a 3D city, so only what is above the rooftops will show."
+            },
+            "createdAt": "2026-11-01T02:08:24.281Z",
+            "author": "claude",
+            "trigger": "chat",
+            "basedOn": 1,
+            "summary": "Rewritten as a sky and far-skyline plate, because the 3D city now covers everything below the rooftops.",
+            "changes": [
+              {
+                "field": "scene",
+                "before": "A vast industrial city at dusk under heavy smog, seen from above. Smokestacks and a cooling tower release slow plumes, an elevated highway full of headlights cuts through the middle, tower cranes stand over a construction site raising pale dust, and dense apartment blocks fade into brown haze.",
+                "after": "The dirty dusk sky over a vast industrial city, seen from high on a rooftop looking toward the low sun. Thick layered brown-gray smog fills the sky, and a dull orange sun sits low in the haze. Far in the distance, a faint skyline of apartment towers, smokestacks and one cooling tower dissolves into the air, with slow plumes rising and flattening against an inversion layer.",
+                "why": "The city is now real 3D, so this plate only shows above the rooftops. The prompt now asks for the sky and a far skyline instead of an aerial view of streets that would be hidden."
+              },
+              {
+                "field": "cameraAngle",
+                "before": "Aerial, 120 m above the rooftops, gentle downward angle, 50 mm equivalent for slight compression.",
+                "after": "From high on a rooftop, camera level and looking straight at the horizon, 50 mm equivalent.",
+                "why": "The city is now real 3D, so this plate only shows above the rooftops. The prompt now asks for the sky and a far skyline instead of an aerial view of streets that would be hidden."
+              },
+              {
+                "field": "cameraMove",
+                "before": "None. Layer foreground, midground and background so depth reads strongly.",
+                "after": "None. Depth comes from layers of haze, with each band of skyline paler than the one in front of it.",
+                "why": "The city is now real 3D, so this plate only shows above the rooftops. The prompt now asks for the sky and a far skyline instead of an aerial view of streets that would be hidden."
+              },
+              {
+                "field": "lighting",
+                "before": "Last light from a low sun behind the haze, plus practical sodium street lights, window lights and red aviation lights beginning to show. A dull orange flare stack burns in the distance.",
+                "after": "Last light from a low sun behind thick haze, right of center. No hard shadows. A few faint red aircraft lights on the distant stacks.",
+                "why": "The city is now real 3D, so this plate only shows above the rooftops. The prompt now asks for the sky and a far skyline instead of an aerial view of streets that would be hidden."
+              },
+              {
+                "field": "composition",
+                "before": "Upper 35% of frame is hazy sky, left clear for a title at top left. Stacks on the right third, highway on a lead-in diagonal, construction dust at lower left, all sources readable in one frame.",
+                "after": "Horizon just below the middle of frame, about 58% down. Below it is only a dark hazy blur of distant rooftops, because a 3D city will cover that area. The sky fills most of the frame and carries the image. Keep the upper left calm enough for large white text. Sun right of center.",
+                "why": "The city is now real 3D, so this plate only shows above the rooftops. The prompt now asks for the sky and a far skyline instead of an aerial view of streets that would be hidden."
+              },
+              {
+                "field": "environment",
+                "before": "Generic, unidentifiable industrial megacity, with no recognizable landmarks, no real company names, mixed residential and heavy industry.",
+                "after": "A generic, unidentifiable industrial megacity far in the distance, with no recognizable landmarks, no real company names, and nothing in sharp detail closer than several kilometres.",
+                "why": "The city is now real 3D, so this plate only shows above the rooftops. The prompt now asks for the sky and a far skyline instead of an aerial view of streets that would be hidden."
+              },
+              {
+                "field": "negative",
+                "before": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, apocalyptic ruins, fire everywhere, dystopian sci-fi towers, flying vehicles, recognizable skyline, tilt-shift miniature look",
+                "after": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, apocalyptic ruins, fire everywhere, dystopian sci-fi towers, flying vehicles, recognizable skyline, tilt-shift miniature look, foreground buildings, street-level detail, top-down aerial view, sharp city detail",
+                "why": "The city is now real 3D, so this plate only shows above the rooftops. The prompt now asks for the sky and a far skyline instead of an aerial view of streets that would be hidden."
+              },
+              {
+                "field": "continuity",
+                "before": "The sun position matches the end of the atmosphere clip. Haze color matches the atmosphere last frame so the cut is invisible.",
+                "after": "Use the approved atmosphere image as a color reference, so the haze color and the sun position carry straight on from Chapter 2. This plate sits behind a 3D city, so only what is above the rooftops will show.",
+                "why": "The city is now real 3D, so this plate only shows above the rooftops. The prompt now asks for the sky and a far skyline instead of an aerial view of streets that would be hidden."
+              }
+            ]
+          }
+        ],
+        "video": [
+          {
+            "rev": 1,
+            "kind": "video",
+            "fields": {
+              "scene": "The camera moves forward over an industrial city at dusk under smog. Stack plumes rise slowly and flatten, traffic flows along an elevated highway, cranes stand over a construction site raising dust, and lights come on across the district.",
+              "style": "Photoreal large-format documentary cinematography, Alexa 65 look, 24 fps with a natural 180 degree shutter, fine film grain, physically plausible motion, the restraint of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Aerial, 120 m above the rooftops, gentle downward angle.",
+              "cameraMove": "A slow steady forward glide with a very slight descent, about 12% of frame travel, with stacks passing on the right. No yaw, no roll.",
+              "lighting": "Fading dusk behind haze, with practical sodium lights and red aviation lights. Light changes only through small windows turning on.",
+              "composition": "Hazy sky band stays at top left for a title. Highway diagonal stays as the lead-in.",
+              "environment": "Generic industrial megacity with no recognizable landmarks.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Brown-gray haze, sodium orange, cold blue shadow.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Slow volumetric plumes with real wind shear. Tiny moving traffic lights. Construction dust hanging low. All of it continuous.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, fast traffic blur, timelapse, smoke running in fast motion, apocalyptic fire",
+              "continuity": "Use the approved polluted-city image as the first frame. Reference the last frame of the atmosphere clip for haze color and sun position."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          },
+          {
+            "rev": 2,
+            "kind": "video",
+            "fields": {
+              "scene": "One continuous flight forward over the same industrial city, starting exactly on the attached image. The dark rooftops in the foreground slide under the camera and the city opens below: slow trucks on a wide highway, a construction site with tower cranes and dust hanging over bare ground, factories with small fires at their stacks, and a power plant with its cooling tower. Smoke rises and flattens into the brown sky. In the last second and a half, smoke drifts across the lens and thickens until the whole frame is soft brown haze.",
+              "style": "Photoreal large-format documentary cinematography, Alexa 65 look, 24 fps with a natural 180 degree shutter, fine film grain, physically plausible motion, the restraint of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Starts exactly as the attached image: just above the rooftops, level horizon, a long view toward the low sun. Stays above the roofs throughout.",
+              "cameraMove": "A slow, steady forward glide with a very slight descent toward the power plant, at the same speed from first frame to last. No yaw, no roll, no shake, no cuts.",
+              "lighting": "The same dull orange sun low on the right throughout, behind haze. Flat brown light on the city, small red aviation lights on the stacks, a few sodium lights, and orange fire at the stacks.",
+              "composition": "The sky stays clear and empty at the top left for a large title. The stacks and cooling tower stay inside the center of the frame, and the horizon holds in the lower third until the haze closes in.",
+              "environment": "The same skyline as the attached image, growing closer: apartment blocks on the left, stacks in the middle, the cooling tower right of center. A generic industrial city with no recognizable landmarks and no people close to the camera.",
+              "palette": "Brown-gray haze, dull orange sun, sodium orange, cold blue shadow in the buildings, with filmic restraint.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Slow volumetric plumes with real wind shear. Tiny slow traffic. Construction dust hanging low. Everything continuous. The final haze builds gradually out of the smoke, with no fade and no flash.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, fast traffic blur, timelapse, smoke running in fast motion, apocalyptic fire, people, cars close to the camera, birds, camera passing through buildings, sudden fog, fade to black, white flash",
+              "continuity": "First frame: the attached city image, exactly. Last frame: almost uniform brown haze, because the film moves from it to a person breathing this air."
+            },
+            "createdAt": "2026-11-01T04:13:20.559Z",
+            "author": "claude",
+            "trigger": "chat",
+            "basedOn": 1,
+            "summary": "Rewritten as the whole of Chapter 3: a flight over the city from the approved image, ending in haze.",
+            "changes": [
+              {
+                "field": "scene",
+                "before": "The camera moves forward over an industrial city at dusk under smog. Stack plumes rise slowly and flatten, traffic flows along an elevated highway, cranes stand over a construction site raising dust, and lights come on across the district.",
+                "after": "One continuous flight forward over the same industrial city, starting exactly on the attached image. The dark rooftops in the foreground slide under the camera and the city opens below: slow trucks on a wide highway, a construction site with tower cranes and dust hanging over bare ground, factories with small fires at their stacks, and a power plant with its cooling tower. Smoke rises and flattens into the brown sky. In the last second and a half, smoke drifts across the lens and thickens until the whole frame is soft brown haze.",
+                "why": "The owner judged the code-built city not good enough, so this clip now has to be the whole city and end in haze."
+              },
+              {
+                "field": "cameraAngle",
+                "before": "Aerial, 120 m above the rooftops, gentle downward angle.",
+                "after": "Starts exactly as the attached image: just above the rooftops, level horizon, a long view toward the low sun. Stays above the roofs throughout.",
+                "why": "The owner judged the code-built city not good enough, so this clip now has to be the whole city and end in haze."
+              },
+              {
+                "field": "cameraMove",
+                "before": "A slow steady forward glide with a very slight descent, about 12% of frame travel, with stacks passing on the right. No yaw, no roll.",
+                "after": "A slow, steady forward glide with a very slight descent toward the power plant, at the same speed from first frame to last. No yaw, no roll, no shake, no cuts.",
+                "why": "The owner judged the code-built city not good enough, so this clip now has to be the whole city and end in haze."
+              },
+              {
+                "field": "lighting",
+                "before": "Fading dusk behind haze, with practical sodium lights and red aviation lights. Light changes only through small windows turning on.",
+                "after": "The same dull orange sun low on the right throughout, behind haze. Flat brown light on the city, small red aviation lights on the stacks, a few sodium lights, and orange fire at the stacks.",
+                "why": "The owner judged the code-built city not good enough, so this clip now has to be the whole city and end in haze."
+              },
+              {
+                "field": "composition",
+                "before": "Hazy sky band stays at top left for a title. Highway diagonal stays as the lead-in.",
+                "after": "The sky stays clear and empty at the top left for a large title. The stacks and cooling tower stay inside the center of the frame, and the horizon holds in the lower third until the haze closes in.",
+                "why": "The owner judged the code-built city not good enough, so this clip now has to be the whole city and end in haze."
+              },
+              {
+                "field": "environment",
+                "before": "Generic industrial megacity with no recognizable landmarks.",
+                "after": "The same skyline as the attached image, growing closer: apartment blocks on the left, stacks in the middle, the cooling tower right of center. A generic industrial city with no recognizable landmarks and no people close to the camera.",
+                "why": "The owner judged the code-built city not good enough, so this clip now has to be the whole city and end in haze."
+              },
+              {
+                "field": "palette",
+                "before": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Brown-gray haze, sodium orange, cold blue shadow.",
+                "after": "Brown-gray haze, dull orange sun, sodium orange, cold blue shadow in the buildings, with filmic restraint.",
+                "why": "The owner judged the code-built city not good enough, so this clip now has to be the whole city and end in haze."
+              },
+              {
+                "field": "vfx",
+                "before": "Slow volumetric plumes with real wind shear. Tiny moving traffic lights. Construction dust hanging low. All of it continuous.",
+                "after": "Slow volumetric plumes with real wind shear. Tiny slow traffic. Construction dust hanging low. Everything continuous. The final haze builds gradually out of the smoke, with no fade and no flash.",
+                "why": "The owner judged the code-built city not good enough, so this clip now has to be the whole city and end in haze."
+              },
+              {
+                "field": "negative",
+                "before": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, fast traffic blur, timelapse, smoke running in fast motion, apocalyptic fire",
+                "after": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, fast traffic blur, timelapse, smoke running in fast motion, apocalyptic fire, people, cars close to the camera, birds, camera passing through buildings, sudden fog, fade to black, white flash",
+                "why": "The owner judged the code-built city not good enough, so this clip now has to be the whole city and end in haze."
+              },
+              {
+                "field": "continuity",
+                "before": "Use the approved polluted-city image as the first frame. Reference the last frame of the atmosphere clip for haze color and sun position.",
+                "after": "First frame: the attached city image, exactly. Last frame: almost uniform brown haze, because the film moves from it to a person breathing this air.",
+                "why": "The owner judged the code-built city not good enough, so this clip now has to be the whole city and end in haze."
+              }
+            ]
+          }
+        ]
+      },
+      "assets": [
+        {
+          "id": "d701b3e0-75b5-4e52-9ffa-4a6427a8d4ef",
+          "kind": "image",
+          "version": 1,
+          "file": "polluted-city/polluted-city__image__v001.png",
+          "originalName": "Industrial_city_under_smog_haze_92bbf5bf_2K-clean.png",
+          "bytes": 1810074,
+          "mime": "image/png",
+          "width": 2752,
+          "height": 1536,
+          "promptRev": 2,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T03:34:25.922Z",
+          "reviewedAt": "2026-11-01T03:36:14.056Z",
+          "web": {
+            "image": "polluted-city/web/polluted-city__image__v001__1920.webp",
+            "imagePhone": "polluted-city/web/polluted-city__image__v001__960.webp"
+          }
+        },
+        {
+          "id": "42d9149a-c45c-47b2-9ee2-853ae01491b1",
+          "kind": "video",
+          "version": 1,
+          "file": "polluted-city/polluted-city__video__v001.mp4",
+          "originalName": "Drone_flying_over_industrial_city_f30768eb_1080p_gwr_video_mvp.mp4",
+          "bytes": 9496476,
+          "mime": "video/mp4",
+          "width": 1920,
+          "height": 1080,
+          "durationSec": 7.93,
+          "promptRev": 2,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T05:16:18.185Z",
+          "reviewedAt": "2026-11-01T05:16:20.441Z",
+          "web": {
+            "video": "polluted-city/web/polluted-city__video__v001__720.mp4",
+            "videoPhone": "polluted-city/web/polluted-city__video__v001__480.mp4",
+            "poster": "polluted-city/web/polluted-city__video__v001__poster.webp"
+          }
+        }
+      ]
+    },
+    "human-lungs": {
+      "id": "human-lungs",
+      "prompts": {
+        "image": [
+          {
+            "rev": 1,
+            "kind": "image",
+            "fields": {
+              "scene": "A scientifically accurate visualization of a human bronchial tree and lungs, suspended in darkness: translucent trachea with C-shaped cartilage rings, the carina dividing into two main bronchi, branching into finer bronchioles that end in grape-like alveolar clusters. A stream of tiny glowing particles follows the airflow down the airway.",
+              "style": "Premium scientific visualization in the manner of a museum exhibit or a Nature cover, photoreal translucent tissue rendered like a scanning electron micrograph colored for clarity. Calm and clinical, not a horror image.",
+              "cameraAngle": "Frontal, centered on the carina, 70 mm equivalent, no perspective distortion.",
+              "cameraMove": "None. Depth comes from translucent layers and soft focus falloff.",
+              "lighting": "Soft dark-field lighting from behind and above, so translucent walls glow at their edges against a black background. A small warm light travels with the particles.",
+              "composition": "Airway centered and slightly right, branching downward and outward, the left third calm and dark for labels and a title. Generous black negative space around the anatomy.",
+              "environment": "Pure black void. No body, no skin, no ribs, no medical equipment.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Pale desaturated rose-ivory tissue, cold blue air streams, tiny orange particles as the only accent.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm. Very clean blacks, as in a microscope image.",
+              "vfx": "Fine particles of varied size, with the largest stopping early in the branches and the smallest going deepest. Thin laminar airflow streaks, barely visible.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "Single still image, no motion.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, blood, gore, wet organs, surgical photo, tumors, disease, skull, skeleton, full human body, horror, slime, labels, arrows, diagram annotations",
+              "continuity": "Tissue color and black background stay identical to the fly-through video. Particle color matches the ember particle already in the film, #E8792B."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          }
+        ],
+        "video": [
+          {
+            "rev": 1,
+            "kind": "video",
+            "fields": {
+              "scene": "A continuous fly-through following one tiny glowing particle along the airflow: down the trachea past C-shaped cartilage rings, through the carina into a main bronchus, along narrowing bronchioles, and finally into a delicate alveolar sac where it slows and holds.",
+              "style": "Premium scientific visualization in motion, museum-grade, translucent tissue rendered like a scanning electron micrograph colored for clarity. Calm and clinical, no wet surfaces.",
+              "cameraAngle": "First-person inside the airway, centered on the particle, 24 mm equivalent, stable horizon.",
+              "cameraMove": "A smooth forward glide following the particle at constant speed, gently curving with the branches, easing to a complete stop by the final second.",
+              "lighting": "Soft self-illuminated tissue, translucent walls glowing faintly, with the warm particle lighting nearby walls as it passes.",
+              "composition": "The particle stays near center with the airway converging on it. Each new branch opens ahead symmetrically.",
+              "environment": "Inside the airway only. Smooth, dry, pale walls with visible cartilage rings, then finer branches, then thin alveolar walls with a faint capillary network.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Pale rose-ivory walls, cold blue air streaks, a single orange particle.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Fine laminar airflow streaks moving with the camera. Other small particles drift past, slower than the hero particle. No mucus, no fluid.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, blood, gore, wet organic surfaces, mucus, tentacles, horror tunnel, cave look, stone texture, disease, diagrams, labels",
+              "continuity": "Use the approved human-lungs image for tissue look. The last frame must hold still inside the alveolus, because the film stops there and pulls back out to the child."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          },
+          {
+            "rev": 2,
+            "kind": "video",
+            "fields": {
+              "scene": "A slow continuous push-in on translucent human lungs suspended in darkness. Starting on the whole pair of lungs, the camera moves toward the airway branches on the right of frame, following a stream of tiny glowing orange particles along the airflow, until one grape-like alveolar cluster fills the frame. One small glowing particle settles on the cluster and stays there.",
+              "style": "Premium scientific visualization in motion, museum-grade, translucent tissue rendered like a scanning electron micrograph colored for clarity. Calm and clinical, no wet surfaces.",
+              "cameraAngle": "Frontal, matching the first frame exactly, 70 mm equivalent.",
+              "cameraMove": "One smooth continuous push-in from the full view to a macro close-up of one alveolar cluster at lower right, at a constant slow speed, easing to a complete stop in the final second. No rotation, no cuts.",
+              "lighting": "Soft dark-field lighting exactly as in the first frame, with translucent walls glowing at their edges against black. The warm light travels with the particles.",
+              "composition": "Begins exactly as the first frame. Ends with one alveolar cluster filling the center of frame against black, with the glowing particle resting on it.",
+              "environment": "Pure black void, as in the first frame. No body, no skin, no ribs, no medical equipment.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Pale rose-ivory walls, cold blue air streaks, a single orange particle.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Fine particles drift along the branches with the airflow, the largest stopping early and the smallest going deepest. Thin blue airflow streaks, barely visible. The lungs themselves stay rigid and do not pulse.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, blood, gore, wet organic surfaces, mucus, tentacles, horror tunnel, cave look, stone texture, disease, diagrams, labels, pulsing, beating, breathing motion of the lungs, anatomy changing shape",
+              "continuity": "Use the approved human-lungs image as the first frame. The last frame must hold completely still, because the film stops on it before pulling back out to the child."
+            },
+            "createdAt": "2026-11-01T02:24:41.800Z",
+            "author": "claude",
+            "trigger": "chat",
+            "basedOn": 1,
+            "summary": "Rewritten as an exterior push-in that starts on the approved image and ends on one alveolar cluster.",
+            "changes": [
+              {
+                "field": "scene",
+                "before": "A continuous fly-through following one tiny glowing particle along the airflow: down the trachea past C-shaped cartilage rings, through the carina into a main bronchus, along narrowing bronchioles, and finally into a delicate alveolar sac where it slows and holds.",
+                "after": "A slow continuous push-in on translucent human lungs suspended in darkness. Starting on the whole pair of lungs, the camera moves toward the airway branches on the right of frame, following a stream of tiny glowing orange particles along the airflow, until one grape-like alveolar cluster fills the frame. One small glowing particle settles on the cluster and stays there.",
+                "why": "The approved image shows the lungs from outside, so the clip now starts on that exact frame and pushes in. Tools also render this far more cleanly than an interior fly-through."
+              },
+              {
+                "field": "cameraAngle",
+                "before": "First-person inside the airway, centered on the particle, 24 mm equivalent, stable horizon.",
+                "after": "Frontal, matching the first frame exactly, 70 mm equivalent.",
+                "why": "The approved image shows the lungs from outside, so the clip now starts on that exact frame and pushes in. Tools also render this far more cleanly than an interior fly-through."
+              },
+              {
+                "field": "cameraMove",
+                "before": "A smooth forward glide following the particle at constant speed, gently curving with the branches, easing to a complete stop by the final second.",
+                "after": "One smooth continuous push-in from the full view to a macro close-up of one alveolar cluster at lower right, at a constant slow speed, easing to a complete stop in the final second. No rotation, no cuts.",
+                "why": "The approved image shows the lungs from outside, so the clip now starts on that exact frame and pushes in. Tools also render this far more cleanly than an interior fly-through."
+              },
+              {
+                "field": "lighting",
+                "before": "Soft self-illuminated tissue, translucent walls glowing faintly, with the warm particle lighting nearby walls as it passes.",
+                "after": "Soft dark-field lighting exactly as in the first frame, with translucent walls glowing at their edges against black. The warm light travels with the particles.",
+                "why": "The approved image shows the lungs from outside, so the clip now starts on that exact frame and pushes in. Tools also render this far more cleanly than an interior fly-through."
+              },
+              {
+                "field": "composition",
+                "before": "The particle stays near center with the airway converging on it. Each new branch opens ahead symmetrically.",
+                "after": "Begins exactly as the first frame. Ends with one alveolar cluster filling the center of frame against black, with the glowing particle resting on it.",
+                "why": "The approved image shows the lungs from outside, so the clip now starts on that exact frame and pushes in. Tools also render this far more cleanly than an interior fly-through."
+              },
+              {
+                "field": "environment",
+                "before": "Inside the airway only. Smooth, dry, pale walls with visible cartilage rings, then finer branches, then thin alveolar walls with a faint capillary network.",
+                "after": "Pure black void, as in the first frame. No body, no skin, no ribs, no medical equipment.",
+                "why": "The approved image shows the lungs from outside, so the clip now starts on that exact frame and pushes in. Tools also render this far more cleanly than an interior fly-through."
+              },
+              {
+                "field": "vfx",
+                "before": "Fine laminar airflow streaks moving with the camera. Other small particles drift past, slower than the hero particle. No mucus, no fluid.",
+                "after": "Fine particles drift along the branches with the airflow, the largest stopping early and the smallest going deepest. Thin blue airflow streaks, barely visible. The lungs themselves stay rigid and do not pulse.",
+                "why": "The approved image shows the lungs from outside, so the clip now starts on that exact frame and pushes in. Tools also render this far more cleanly than an interior fly-through."
+              },
+              {
+                "field": "negative",
+                "before": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, blood, gore, wet organic surfaces, mucus, tentacles, horror tunnel, cave look, stone texture, disease, diagrams, labels",
+                "after": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, blood, gore, wet organic surfaces, mucus, tentacles, horror tunnel, cave look, stone texture, disease, diagrams, labels, pulsing, beating, breathing motion of the lungs, anatomy changing shape",
+                "why": "The approved image shows the lungs from outside, so the clip now starts on that exact frame and pushes in. Tools also render this far more cleanly than an interior fly-through."
+              },
+              {
+                "field": "continuity",
+                "before": "Use the approved human-lungs image for tissue look. The last frame must hold still inside the alveolus, because the film stops there and pulls back out to the child.",
+                "after": "Use the approved human-lungs image as the first frame. The last frame must hold completely still, because the film stops on it before pulling back out to the child.",
+                "why": "The approved image shows the lungs from outside, so the clip now starts on that exact frame and pushes in. Tools also render this far more cleanly than an interior fly-through."
+              }
+            ]
+          }
+        ]
+      },
+      "assets": [
+        {
+          "id": "244b451d-f788-48b9-b26c-9088e3fa4841",
+          "kind": "image",
+          "version": 1,
+          "file": "human-lungs/human-lungs__image__v001.png",
+          "originalName": "Human_bronchial_tree_and_lungs_03e1f524_2K-clean.png",
+          "bytes": 2979980,
+          "mime": "image/png",
+          "width": 2752,
+          "height": 1536,
+          "promptRev": 1,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T03:34:25.945Z",
+          "reviewedAt": "2026-11-01T03:36:14.290Z",
+          "web": {
+            "image": "human-lungs/web/human-lungs__image__v001__1920.webp",
+            "imagePhone": "human-lungs/web/human-lungs__image__v001__960.webp"
+          }
+        },
+        {
+          "id": "fe1295fb-a1a3-44b6-b0f1-a6c214cfae35",
+          "kind": "video",
+          "version": 1,
+          "file": "human-lungs/human-lungs__video__v001.mp4",
+          "originalName": "Particle_entering_human_lungs_f32bbb39_1080p_gwr_video_mvp.mp4",
+          "bytes": 11745045,
+          "mime": "video/mp4",
+          "width": 1920,
+          "height": 1080,
+          "durationSec": 7.93,
+          "promptRev": 2,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T03:34:26.071Z",
+          "reviewedAt": "2026-11-01T03:36:17.073Z",
+          "web": {
+            "video": "human-lungs/web/human-lungs__video__v001__720.mp4",
+            "videoPhone": "human-lungs/web/human-lungs__video__v001__480.mp4",
+            "poster": "human-lungs/web/human-lungs__video__v001__poster.webp"
+          }
+        }
+      ]
+    },
+    "child-city": {
+      "id": "child-city",
+      "prompts": {
+        "image": [
+          {
+            "rev": 1,
+            "kind": "image",
+            "fields": {
+              "scene": "A school-age child, around nine years old, stands still on an empty city sidewalk seen entirely from behind, wearing an ordinary jacket and a school backpack, looking out at distant apartment towers dissolving into thick gray-brown smog. A dull orange sun hangs low in the haze.",
+              "style": "Photoreal large-format documentary photography, Alexa 65 look, Master Prime optics, fine natural film grain, true-to-life textures, restrained and unstylized, the realism of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Low, at the child’s shoulder height, directly behind and slightly left, 50 mm equivalent, shallow depth of field.",
+              "cameraMove": "None. Absolute stillness.",
+              "lighting": "Soft flat directionless smog light with a weak orange sun disc as the only warm note, a faint warm rim on the jacket and hair. No artificial light.",
+              "composition": "Child in the lower center third, small against the frame, back to camera. The upper center is open haze for one line of large text. Towers dissolve with distance.",
+              "environment": "An ordinary wet sidewalk, a low wall and a bare young street tree, with distant towers fading out. No crowds, no vehicles close by, no debris or ruins.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Gray-brown haze filling the frame, a muted navy jacket, one small orange sun.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm. Slightly lifted blacks from haze, nothing crushed.",
+              "vfx": "Real volumetric haze with depth. Very fine suspended particles in the air between camera and child, almost invisible.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "Single still image, no motion.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, visible face, profile, child looking back, crying, coughing, distress, gas mask, ruins, war zone, dirty or ragged clothing, sentimental poster look, dramatic pose, crowd",
+              "continuity": "This street and this exact camera position return in future-city, with the same framing and clean air. Lock the composition now, because Chapter 6 depends on it."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          }
+        ],
+        "video": [
+          {
+            "rev": 1,
+            "kind": "video",
+            "fields": {
+              "scene": "A school-age child, seen entirely from behind, stands still on a city sidewalk looking at towers dissolving into smog. The child does not turn around. A faint breeze moves the jacket hem and a few strands of hair. Haze drifts slowly past the towers.",
+              "style": "Photoreal large-format documentary cinematography, Alexa 65 look, 24 fps with a natural 180 degree shutter, fine film grain, physically plausible motion, the restraint of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Low, at the child’s shoulder height, directly behind and slightly left, 50 mm equivalent, shallow depth of field.",
+              "cameraMove": "An imperceptibly slow push-in, under 4% across the whole clip. The child stays the same place in frame.",
+              "lighting": "Soft flat smog light with a weak orange sun disc, unchanging.",
+              "composition": "Child in lower center third, back to camera, with open haze above for text throughout.",
+              "environment": "Ordinary wet sidewalk, low wall, bare young street tree, distant towers fading out.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Gray-brown haze, muted navy jacket, one small orange sun.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Slow-drifting volumetric haze and very fine suspended particles. Only the hem, hair and haze move.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, turning head, visible face, walking, crying, coughing, distress, gas mask, hands morphing, body warping",
+              "continuity": "Use the approved child-city image as the first frame. The last frame is the reference for the first frame of future-city."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          }
+        ]
+      },
+      "assets": [
+        {
+          "id": "d57ef1ef-2149-4c73-90c0-1bb65d85190b",
+          "kind": "image",
+          "version": 1,
+          "file": "child-city/child-city__image__v001.png",
+          "originalName": "Child_looking_at_city_smog_c1f2fc48_2K-clean.png",
+          "bytes": 3280120,
+          "mime": "image/png",
+          "width": 2752,
+          "height": 1536,
+          "promptRev": 1,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T03:34:26.092Z",
+          "reviewedAt": "2026-11-01T03:36:17.332Z",
+          "web": {
+            "image": "child-city/web/child-city__image__v001__1920.webp",
+            "imagePhone": "child-city/web/child-city__image__v001__960.webp"
+          }
+        },
+        {
+          "id": "3eae3ea2-88c6-4980-8ae7-d64571eae92d",
+          "kind": "video",
+          "version": 1,
+          "file": "child-city/child-city__video__v001.mp4",
+          "originalName": "Child_looking_at_smoggy_towers_269ccb27_1080p_gwr_video_mvp.mp4",
+          "bytes": 10435503,
+          "mime": "video/mp4",
+          "width": 1920,
+          "height": 1080,
+          "durationSec": 7.93,
+          "promptRev": 1,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T03:34:26.212Z",
+          "reviewedAt": "2026-11-01T03:36:19.718Z",
+          "web": {
+            "video": "child-city/web/child-city__video__v001__720.mp4",
+            "videoPhone": "child-city/web/child-city__video__v001__480.mp4",
+            "poster": "child-city/web/child-city__video__v001__poster.webp"
+          }
+        }
+      ]
+    },
+    "future-city": {
+      "id": "future-city",
+      "prompts": {
+        "image": [
+          {
+            "rev": 1,
+            "kind": "image",
+            "fields": {
+              "scene": "The same city street as the previous scene, now under clear blue morning air. Young street trees in leaf line the sidewalk, an electric tram passes in the middle distance, cyclists use a protected lane, ordinary apartment roofs carry solar panels, and wind turbines turn on a distant ridge. A school-age child, seen from behind, looks out at it.",
+              "style": "Photoreal large-format documentary photography, Alexa 65 look, Master Prime optics, fine natural film grain, true-to-life textures, restrained and unstylized, the realism of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Identical to child-city: low, at shoulder height, directly behind and slightly left, 50 mm equivalent.",
+              "cameraMove": "None.",
+              "lighting": "Clean early morning sun from the same direction as before, now clear and warm, with soft real shadows and blue sky fill.",
+              "composition": "Identical framing to child-city, with the child in lower center third. Sky takes the upper third for a large title. Distant towers now sharp, with visible detail.",
+              "environment": "The same towers and sidewalk, realistic and achievable. Ordinary buildings, retrofit solar, real street trees, a modern tram. No futuristic architecture.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Atmospheric blue #7FB8E8 sky, fresh natural greens, warm morning light. Bright, but keep a filmic restraint.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm. Open shadows and clean, true color.",
+              "vfx": "Crisp distant detail that proves the air is clean. No haze except natural morning softness.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "Single still image, no motion.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, visible face, futuristic domes, flying cars, sci-fi skyscrapers, floating gardens, fantasy utopia, oversaturated greens, stock photo smiles, crowds, solar panels covering everything",
+              "continuity": "Use the approved child-city image as a structure and composition reference, so the street, camera and child position match exactly. Only the air and the additions change."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          },
+          {
+            "rev": 2,
+            "kind": "image",
+            "fields": {
+              "scene": "The same city street and the same moment as the reference frame, as it could be: a clear morning. The same school-age child stands in the same spot, seen directly from behind from the waist up, in the same navy jacket and backpack, looking straight ahead. The air has cleared completely. The bare saplings along the sidewalk are now young trees in full green leaf. A modern electric tram passes on the road in the middle distance on the right, with two cyclists in a protected lane beside it. Ordinary low rooftops carry solar panels, and three small wind turbines stand on a faint ridge far beyond the towers.",
+              "style": "Photoreal large-format documentary photography, Alexa 65 look, Master Prime optics, fine natural film grain, true-to-life textures, restrained and unstylized, the realism of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Identical to the reference frame: directly behind the child at shoulder height, level horizon, 50 mm equivalent, same vanishing point.",
+              "cameraMove": "None.",
+              "lighting": "Clean early morning sun in the same spot, directly above the child's head, small and clear in a blue sky. Warm rim light on the child's hair and shoulders, soft real shadows falling toward the camera, blue sky fill, warm light on the sun-facing edges of the towers.",
+              "composition": "Match the reference frame exactly. Child centered from the waist up, head just below the middle of the frame, the sun directly above the head about 37% from the top. Towers keep their positions left and right. The turbines stand in the gap between the central towers. The open sky stays clean, with no clouds crossing it, so a large title can sit over it.",
+              "environment": "The same towers, the same low pavilion, stone wall and hedge on the left, the same paving now dry and clean, the same road on the right. Additions only: leaves on the same trees, rails and one tram, a protected cycle lane, solar panels on the pavilion roof and low rooftops, turbines far away. Ordinary buildings and real street trees. No futuristic architecture.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Atmospheric blue #7FB8E8 sky, fresh natural greens, warm morning light. Bright, but keep a filmic restraint.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm. Open shadows and clean, true color.",
+              "vfx": "Crisp distant detail that proves the air is clean: windows readable on the far towers, the far ridge visible. No haze except natural morning softness. Nothing floating in the sky: no birds, specks, ash or dust.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "Single still image, no motion.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, visible face, futuristic domes, flying cars, sci-fi skyscrapers, floating gardens, fantasy utopia, oversaturated greens, stock photo smiles, crowds, solar panels covering everything, birds, dark specks, floating debris, ash, dust motes, hair strands standing up, haze, smog, gray sky, changed camera position, different child, turned head, visible ear or cheek",
+              "continuity": "Upload references/child-city_last-frame.png as the structure and composition reference, at the highest reference strength the tool allows. Street, towers, camera, child, jacket, backpack and sun position must match it, so the two frames dissolve into each other in the film. Only the air, the light and the listed additions change. Do not copy the specks in its sky or its raised hair strands: the hair lies flat."
+            },
+            "createdAt": "2026-11-01T03:02:35.874Z",
+            "author": "claude",
+            "trigger": "chat",
+            "basedOn": 1,
+            "summary": "Rebuilt on the last frame of the Chapter 5 video, so the two chapters dissolve as one shot.",
+            "changes": [
+              {
+                "field": "scene",
+                "before": "The same city street as the previous scene, now under clear blue morning air. Young street trees in leaf line the sidewalk, an electric tram passes in the middle distance, cyclists use a protected lane, ordinary apartment roofs carry solar panels, and wind turbines turn on a distant ridge. A school-age child, seen from behind, looks out at it.",
+                "after": "The same city street and the same moment as the reference frame, as it could be: a clear morning. The same school-age child stands in the same spot, seen directly from behind from the waist up, in the same navy jacket and backpack, looking straight ahead. The air has cleared completely. The bare saplings along the sidewalk are now young trees in full green leaf. A modern electric tram passes on the road in the middle distance on the right, with two cyclists in a protected lane beside it. Ordinary low rooftops carry solar panels, and three small wind turbines stand on a faint ridge far beyond the towers.",
+                "why": "The Chapter 5 video ends closer than the old brief assumed: waist up, centered, sun above the head."
+              },
+              {
+                "field": "cameraAngle",
+                "before": "Identical to child-city: low, at shoulder height, directly behind and slightly left, 50 mm equivalent.",
+                "after": "Identical to the reference frame: directly behind the child at shoulder height, level horizon, 50 mm equivalent, same vanishing point.",
+                "why": "Must match the last frame of the video, not the earlier image."
+              },
+              {
+                "field": "lighting",
+                "before": "Clean early morning sun from the same direction as before, now clear and warm, with soft real shadows and blue sky fill.",
+                "after": "Clean early morning sun in the same spot, directly above the child's head, small and clear in a blue sky. Warm rim light on the child's hair and shoulders, soft real shadows falling toward the camera, blue sky fill, warm light on the sun-facing edges of the towers.",
+                "why": "Keeps the sun where the video left it, so the dissolve reads as the air clearing."
+              },
+              {
+                "field": "composition",
+                "before": "Identical framing to child-city, with the child in lower center third. Sky takes the upper third for a large title. Distant towers now sharp, with visible detail.",
+                "after": "Match the reference frame exactly. Child centered from the waist up, head just below the middle of the frame, the sun directly above the head about 37% from the top. Towers keep their positions left and right. The turbines stand in the gap between the central towers. The open sky stays clean, with no clouds crossing it, so a large title can sit over it.",
+                "why": "Exact framing is what makes the cut between chapters feel like one shot."
+              },
+              {
+                "field": "environment",
+                "before": "The same towers and sidewalk, realistic and achievable. Ordinary buildings, retrofit solar, real street trees, a modern tram. No futuristic architecture.",
+                "after": "The same towers, the same low pavilion, stone wall and hedge on the left, the same paving now dry and clean, the same road on the right. Additions only: leaves on the same trees, rails and one tram, a protected cycle lane, solar panels on the pavilion roof and low rooftops, turbines far away. Ordinary buildings and real street trees. No futuristic architecture.",
+                "why": "Names what is really in the last frame, so the additions land on real places."
+              },
+              {
+                "field": "vfx",
+                "before": "Crisp distant detail that proves the air is clean. No haze except natural morning softness.",
+                "after": "Crisp distant detail that proves the air is clean: windows readable on the far towers, the far ridge visible. No haze except natural morning softness. Nothing floating in the sky: no birds, specks, ash or dust.",
+                "why": "The video has dark specks in its sky. They must not carry over."
+              },
+              {
+                "field": "negative",
+                "before": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, visible face, futuristic domes, flying cars, sci-fi skyscrapers, floating gardens, fantasy utopia, oversaturated greens, stock photo smiles, crowds, solar panels covering everything",
+                "after": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, visible face, futuristic domes, flying cars, sci-fi skyscrapers, floating gardens, fantasy utopia, oversaturated greens, stock photo smiles, crowds, solar panels covering everything, birds, dark specks, floating debris, ash, dust motes, hair strands standing up, haze, smog, gray sky, changed camera position, different child, turned head, visible ear or cheek",
+                "why": "Blocks the two flaws seen in the video: specks and raised hair."
+              },
+              {
+                "field": "continuity",
+                "before": "Use the approved child-city image as a structure and composition reference, so the street, camera and child position match exactly. Only the air and the additions change.",
+                "after": "Upload references/child-city_last-frame.png as the structure and composition reference, at the highest reference strength the tool allows. Street, towers, camera, child, jacket, backpack and sun position must match it, so the two frames dissolve into each other in the film. Only the air, the light and the listed additions change. Do not copy the specks in its sky or its raised hair strands: the hair lies flat.",
+                "why": "Reference changed from the child image to the last frame of the approved-candidate video."
+              }
+            ]
+          },
+          {
+            "rev": 3,
+            "kind": "image",
+            "fields": {
+              "scene": "Edit the attached photo. Do not create a new scene, a new street or a new child. This is the same photograph on a clear morning: the smog is gone, and only the changes listed under Environment are added. Everything else stays exactly where it is.",
+              "style": "Keep the look of the attached photo: photoreal documentary photography, fine natural grain, true-to-life textures. No stylization.",
+              "cameraAngle": "Unchanged from the attached photo.",
+              "cameraMove": "None.",
+              "lighting": "The same sun in the same spot, directly above the child's head, now small, clear and bright in a blue sky. Clean warm morning light, soft real shadows falling toward the camera, a warm rim on the child's hair and shoulders.",
+              "composition": "The same layout as the attached photo, line for line. Do not crop, zoom, widen or shift anything. The child stays centered, visible from the waist up, at the same size. Every tower keeps its exact outline and position.",
+              "environment": "Keep unchanged: the child, the dark hair, the navy jacket and the gray-patched backpack; every tower; the stone wall, hedge, low pavilion, paving, road and street lamp. Change only these: (1) The haze is gone, the sky is clear blue, and the towers show sharp detail and natural color, even the far ones. (2) The same thin street trees, with the same trunks in the same places, now all have fresh green leaves. (3) One modern tram on the road, far back on the right, small in the middle distance, with one cyclist near it. (4) Solar panels on the pavilion roof. (5) Three tiny wind turbines on a low far ridge, in the gap between the central towers.",
+              "palette": "Blue sky near #7FB8E8, fresh natural greens, warm morning light, clean deep shadows. Bright, with filmic restraint.",
+              "grade": "Natural and low contrast, muted saturation, soft highlights, matching the film look of the attached photo.",
+              "vfx": "Remove the dark specks in the sky and the raised hair strands: the hair lies flat. Nothing floats in the sky.",
+              "aspect": "16:9, the same as the attached photo, 1920x1080 or larger.",
+              "duration": "Single still image, no motion.",
+              "negative": "new composition, different street, different child, different clothes, different backpack, lighter hair, visible ear or cheek, turned head, visible face, moved or redrawn towers, zoomed or cropped framing, tram in the foreground, large cyclists, bare trees, haze, smog, gray sky, birds, specks, text, readable signs, watermark, logos, cartoon, CGI look, oversaturation, HDR halos, lens flare, futuristic architecture, flying cars, crowds",
+              "continuity": "The attached photo is the last frame of the previous shot, and the film dissolves from it into this image. Laid on top of each other, the child and the towers must line up exactly. Only the air, the light and the listed additions differ."
+            },
+            "createdAt": "2026-11-01T03:08:51.298Z",
+            "author": "claude",
+            "trigger": "chat",
+            "basedOn": 2,
+            "summary": "Rewritten as an edit of the Chapter 5 last frame, because rev 2 produced a new street and a new child.",
+            "changes": [
+              {
+                "field": "scene",
+                "before": "The same city street and the same moment as the reference frame, as it could be: a clear morning. The same school-age child stands in the same spot, seen directly from behind from the waist up, in the same navy jacket and backpack, looking straight ahead. The air has cleared completely. The bare saplings along the sidewalk are now young trees in full green leaf. A modern electric tram passes on the road in the middle distance on the right, with two cyclists in a protected lane beside it. Ordinary low rooftops carry solar panels, and three small wind turbines stand on a faint ridge far beyond the towers.",
+                "after": "Edit the attached photo. Do not create a new scene, a new street or a new child. This is the same photograph on a clear morning: the smog is gone, and only the changes listed under Environment are added. Everything else stays exactly where it is.",
+                "why": "Rev 2 came back as a new place: different child, clothes, backpack and towers, no sun. Described as an edit so the tool keeps the frame."
+              },
+              {
+                "field": "style",
+                "before": "Photoreal large-format documentary photography, Alexa 65 look, Master Prime optics, fine natural film grain, true-to-life textures, restrained and unstylized, the realism of a BBC or National Geographic environmental documentary.",
+                "after": "Keep the look of the attached photo: photoreal documentary photography, fine natural grain, true-to-life textures. No stylization.",
+                "why": "Rev 2 came back as a new place: different child, clothes, backpack and towers, no sun. Described as an edit so the tool keeps the frame."
+              },
+              {
+                "field": "cameraAngle",
+                "before": "Identical to the reference frame: directly behind the child at shoulder height, level horizon, 50 mm equivalent, same vanishing point.",
+                "after": "Unchanged from the attached photo.",
+                "why": "Rev 2 came back as a new place: different child, clothes, backpack and towers, no sun. Described as an edit so the tool keeps the frame."
+              },
+              {
+                "field": "lighting",
+                "before": "Clean early morning sun in the same spot, directly above the child's head, small and clear in a blue sky. Warm rim light on the child's hair and shoulders, soft real shadows falling toward the camera, blue sky fill, warm light on the sun-facing edges of the towers.",
+                "after": "The same sun in the same spot, directly above the child's head, now small, clear and bright in a blue sky. Clean warm morning light, soft real shadows falling toward the camera, a warm rim on the child's hair and shoulders.",
+                "why": "Rev 2 came back as a new place: different child, clothes, backpack and towers, no sun. Described as an edit so the tool keeps the frame."
+              },
+              {
+                "field": "composition",
+                "before": "Match the reference frame exactly. Child centered from the waist up, head just below the middle of the frame, the sun directly above the head about 37% from the top. Towers keep their positions left and right. The turbines stand in the gap between the central towers. The open sky stays clean, with no clouds crossing it, so a large title can sit over it.",
+                "after": "The same layout as the attached photo, line for line. Do not crop, zoom, widen or shift anything. The child stays centered, visible from the waist up, at the same size. Every tower keeps its exact outline and position.",
+                "why": "Rev 2 came back as a new place: different child, clothes, backpack and towers, no sun. Described as an edit so the tool keeps the frame."
+              },
+              {
+                "field": "environment",
+                "before": "The same towers, the same low pavilion, stone wall and hedge on the left, the same paving now dry and clean, the same road on the right. Additions only: leaves on the same trees, rails and one tram, a protected cycle lane, solar panels on the pavilion roof and low rooftops, turbines far away. Ordinary buildings and real street trees. No futuristic architecture.",
+                "after": "Keep unchanged: the child, the dark hair, the navy jacket and the gray-patched backpack; every tower; the stone wall, hedge, low pavilion, paving, road and street lamp. Change only these: (1) The haze is gone, the sky is clear blue, and the towers show sharp detail and natural color, even the far ones. (2) The same thin street trees, with the same trunks in the same places, now all have fresh green leaves. (3) One modern tram on the road, far back on the right, small in the middle distance, with one cyclist near it. (4) Solar panels on the pavilion roof. (5) Three tiny wind turbines on a low far ridge, in the gap between the central towers.",
+                "why": "Rev 2 came back as a new place: different child, clothes, backpack and towers, no sun. Described as an edit so the tool keeps the frame."
+              },
+              {
+                "field": "palette",
+                "before": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Atmospheric blue #7FB8E8 sky, fresh natural greens, warm morning light. Bright, but keep a filmic restraint.",
+                "after": "Blue sky near #7FB8E8, fresh natural greens, warm morning light, clean deep shadows. Bright, with filmic restraint.",
+                "why": "Rev 2 came back as a new place: different child, clothes, backpack and towers, no sun. Described as an edit so the tool keeps the frame."
+              },
+              {
+                "field": "grade",
+                "before": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm. Open shadows and clean, true color.",
+                "after": "Natural and low contrast, muted saturation, soft highlights, matching the film look of the attached photo.",
+                "why": "Rev 2 came back as a new place: different child, clothes, backpack and towers, no sun. Described as an edit so the tool keeps the frame."
+              },
+              {
+                "field": "vfx",
+                "before": "Crisp distant detail that proves the air is clean: windows readable on the far towers, the far ridge visible. No haze except natural morning softness. Nothing floating in the sky: no birds, specks, ash or dust.",
+                "after": "Remove the dark specks in the sky and the raised hair strands: the hair lies flat. Nothing floats in the sky.",
+                "why": "Rev 2 came back as a new place: different child, clothes, backpack and towers, no sun. Described as an edit so the tool keeps the frame."
+              },
+              {
+                "field": "aspect",
+                "before": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+                "after": "16:9, the same as the attached photo, 1920x1080 or larger.",
+                "why": "Rev 2 came back as a new place: different child, clothes, backpack and towers, no sun. Described as an edit so the tool keeps the frame."
+              },
+              {
+                "field": "negative",
+                "before": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, visible face, futuristic domes, flying cars, sci-fi skyscrapers, floating gardens, fantasy utopia, oversaturated greens, stock photo smiles, crowds, solar panels covering everything, birds, dark specks, floating debris, ash, dust motes, hair strands standing up, haze, smog, gray sky, changed camera position, different child, turned head, visible ear or cheek",
+                "after": "new composition, different street, different child, different clothes, different backpack, lighter hair, visible ear or cheek, turned head, visible face, moved or redrawn towers, zoomed or cropped framing, tram in the foreground, large cyclists, bare trees, haze, smog, gray sky, birds, specks, text, readable signs, watermark, logos, cartoon, CGI look, oversaturation, HDR halos, lens flare, futuristic architecture, flying cars, crowds",
+                "why": "Rev 2 came back as a new place: different child, clothes, backpack and towers, no sun. Described as an edit so the tool keeps the frame."
+              },
+              {
+                "field": "continuity",
+                "before": "Upload references/child-city_last-frame.png as the structure and composition reference, at the highest reference strength the tool allows. Street, towers, camera, child, jacket, backpack and sun position must match it, so the two frames dissolve into each other in the film. Only the air, the light and the listed additions change. Do not copy the specks in its sky or its raised hair strands: the hair lies flat.",
+                "after": "The attached photo is the last frame of the previous shot, and the film dissolves from it into this image. Laid on top of each other, the child and the towers must line up exactly. Only the air, the light and the listed additions differ.",
+                "why": "Rev 2 came back as a new place: different child, clothes, backpack and towers, no sun. Described as an edit so the tool keeps the frame."
+              }
+            ]
+          }
+        ],
+        "video": [
+          {
+            "rev": 1,
+            "kind": "video",
+            "fields": {
+              "scene": "One continuous shot of the same street, as the smog slowly lifts. The gray haze thins, the sun brightens from dull orange to clear gold, blue sky opens overhead, distant towers sharpen, and wind turbines become visible on the ridge. Tree leaves stir and a tram passes.",
+              "style": "Photoreal large-format documentary cinematography, Alexa 65 look, 24 fps with a natural 180 degree shutter, fine film grain, physically plausible motion, the restraint of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Identical to child-city: low, at shoulder height, directly behind and slightly left, 50 mm equivalent.",
+              "cameraMove": "Locked off, with no camera movement at all, so that only the air changes.",
+              "lighting": "A continuous transition from flat smog light to clear morning sun from the same direction, with shadows gradually appearing.",
+              "composition": "Identical framing throughout. Child in lower center third.",
+              "environment": "The same street, gaining street trees in leaf, a tram, rooftop solar and distant turbines as the haze lifts to reveal them.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Starts gray-brown, ends clear atmospheric blue with fresh greens.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Slow volumetric clearing from the top of frame downward. No wipe, no flash. Natural, with continuous change across the whole clip.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, visible face, futuristic domes, flying cars, sudden changes, objects popping in, plants growing unnaturally fast",
+              "continuity": "First frame: the last frame of the child-city clip. Last frame: the approved future-city image. Use first-and-last-frame mode if your tool has one (Flow, Veo, Kling)."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          },
+          {
+            "rev": 2,
+            "kind": "video",
+            "fields": {
+              "scene": "One continuous locked-off shot of the same street, from the first attached frame to the second. The smog slowly lifts and the same street stands in clean morning air. The child does not move at all. The gray-brown haze thins from the top of the frame downward, blue sky opens overhead, the dull orange sun brightens to clear white-gold, and the towers gain sharp detail. Young green leaves soften into view on the bare trees, a tram glides in from the far distance and a cyclist rides in near it, both ending exactly where they are in the last frame. Far wind turbines emerge through the clearing air and slowly turn.",
+              "style": "Photoreal large-format documentary cinematography, Alexa 65 look, 24 fps with a natural 180 degree shutter, fine film grain, physically plausible motion, the restraint of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Unchanged from both attached frames: directly behind the child at shoulder height, level horizon.",
+              "cameraMove": "Locked off. No push-in, no pull-back, no pan, no tilt, no drift. Only the air changes.",
+              "lighting": "A continuous change from flat smog light to clean morning sun in the same spot above the child's head. Shadows slowly appear and a warm rim grows on the child's hair and shoulders.",
+              "composition": "Identical framing throughout, matching both attached frames line for line. The child stays centered from the waist up, at the same size. Every tower keeps its exact outline and position.",
+              "environment": "The same towers, wall, hedge, pavilion, paving, road and lamp throughout. The solar panels on the pavilion and the far turbines are hidden by haze at first and revealed as it thins.",
+              "palette": "Starts gray-brown with a dull orange sun. Ends in atmospheric blue #7FB8E8 with fresh natural greens and warm morning light, with filmic restraint.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Slow volumetric clearing from the top of the frame downward, continuous across the whole clip. No wipe, no flash. The few dark specks in the sky of the first frame drift out within the first second, and the raised hair strands settle.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, visible face, futuristic domes, flying cars, sudden changes, objects popping in, camera movement, zoom, parallax, child moving, head turning, walking, moved towers, birds",
+              "continuity": "First frame: the last frame of the previous shot. Last frame: the future-city image. Use first-and-last-frame mode. The clip must begin and end exactly on these two frames, because the film joins it to the previous shot and scrubs it with scroll."
+            },
+            "createdAt": "2026-11-01T03:19:40.907Z",
+            "author": "claude",
+            "trigger": "chat",
+            "basedOn": 1,
+            "summary": "Rewritten around the two matched frames: a locked-off clip in which only the air changes.",
+            "changes": [
+              {
+                "field": "scene",
+                "before": "One continuous shot of the same street, as the smog slowly lifts. The gray haze thins, the sun brightens from dull orange to clear gold, blue sky opens overhead, distant towers sharpen, and wind turbines become visible on the ridge. Tree leaves stir and a tram passes.",
+                "after": "One continuous locked-off shot of the same street, from the first attached frame to the second. The smog slowly lifts and the same street stands in clean morning air. The child does not move at all. The gray-brown haze thins from the top of the frame downward, blue sky opens overhead, the dull orange sun brightens to clear white-gold, and the towers gain sharp detail. Young green leaves soften into view on the bare trees, a tram glides in from the far distance and a cyclist rides in near it, both ending exactly where they are in the last frame. Far wind turbines emerge through the clearing air and slowly turn.",
+                "why": "Both end frames now exist and line up, so the clip only has to carry the clearing between them."
+              },
+              {
+                "field": "cameraAngle",
+                "before": "Identical to child-city: low, at shoulder height, directly behind and slightly left, 50 mm equivalent.",
+                "after": "Unchanged from both attached frames: directly behind the child at shoulder height, level horizon.",
+                "why": "Names the two real frames instead of the older child image."
+              },
+              {
+                "field": "cameraMove",
+                "before": "Locked off, with no camera movement at all, so that only the air changes.",
+                "after": "Locked off. No push-in, no pull-back, no pan, no tilt, no drift. Only the air changes.",
+                "why": "The last child clip moved far more than asked, so every kind of move is ruled out by name."
+              },
+              {
+                "field": "lighting",
+                "before": "A continuous transition from flat smog light to clear morning sun from the same direction, with shadows gradually appearing.",
+                "after": "A continuous change from flat smog light to clean morning sun in the same spot above the child's head. Shadows slowly appear and a warm rim grows on the child's hair and shoulders.",
+                "why": "Keeps the sun where both frames have it."
+              },
+              {
+                "field": "composition",
+                "before": "Identical framing throughout. Child in lower center third.",
+                "after": "Identical framing throughout, matching both attached frames line for line. The child stays centered from the waist up, at the same size. Every tower keeps its exact outline and position.",
+                "why": "Any drift would show at the join with the previous shot."
+              },
+              {
+                "field": "environment",
+                "before": "The same street, gaining street trees in leaf, a tram, rooftop solar and distant turbines as the haze lifts to reveal them.",
+                "after": "The same towers, wall, hedge, pavilion, paving, road and lamp throughout. The solar panels on the pavilion and the far turbines are hidden by haze at first and revealed as it thins.",
+                "why": "Reveals only what the last frame really contains."
+              },
+              {
+                "field": "palette",
+                "before": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Starts gray-brown, ends clear atmospheric blue with fresh greens.",
+                "after": "Starts gray-brown with a dull orange sun. Ends in atmospheric blue #7FB8E8 with fresh natural greens and warm morning light, with filmic restraint.",
+                "why": "Matches the colors of the two real frames."
+              },
+              {
+                "field": "vfx",
+                "before": "Slow volumetric clearing from the top of frame downward. No wipe, no flash. Natural, with continuous change across the whole clip.",
+                "after": "Slow volumetric clearing from the top of the frame downward, continuous across the whole clip. No wipe, no flash. The few dark specks in the sky of the first frame drift out within the first second, and the raised hair strands settle.",
+                "why": "The first frame has specks and raised hair, and the last frame has neither."
+              },
+              {
+                "field": "negative",
+                "before": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, visible face, futuristic domes, flying cars, sudden changes, objects popping in, plants growing unnaturally fast",
+                "after": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, visible face, futuristic domes, flying cars, sudden changes, objects popping in, camera movement, zoom, parallax, child moving, head turning, walking, moved towers, birds",
+                "why": "Leaves must appear in this clip, so the old block on fast growth would fight the last frame."
+              },
+              {
+                "field": "continuity",
+                "before": "First frame: the last frame of the child-city clip. Last frame: the approved future-city image. Use first-and-last-frame mode if your tool has one (Flow, Veo, Kling).",
+                "after": "First frame: the last frame of the previous shot. Last frame: the future-city image. Use first-and-last-frame mode. The clip must begin and end exactly on these two frames, because the film joins it to the previous shot and scrubs it with scroll.",
+                "why": "Exact end frames are what make the scroll hand-over invisible."
+              }
+            ]
+          }
+        ]
+      },
+      "assets": [
+        {
+          "id": "7e29a3cb-e09f-4153-8659-0b8065de0d4b",
+          "kind": "image",
+          "version": 1,
+          "file": "future-city/future-city__image__v001.png",
+          "originalName": "Editing_photo_environment_and_li…_700e7bb4_2K-clean.png",
+          "bytes": 3415474,
+          "mime": "image/png",
+          "width": 2752,
+          "height": 1536,
+          "promptRev": 3,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T03:34:26.226Z",
+          "reviewedAt": "2026-11-01T03:36:19.984Z",
+          "web": {
+            "image": "future-city/web/future-city__image__v001__1920.webp",
+            "imagePhone": "future-city/web/future-city__image__v001__960.webp"
+          }
+        },
+        {
+          "id": "66f78d2b-2e2c-4066-933f-6419ef3d412f",
+          "kind": "video",
+          "version": 1,
+          "file": "future-city/future-city__video__v001.mp4",
+          "originalName": "Smog_lifts_on_city_street_b1c142ca_1080p_gwr_video_mvp.mp4",
+          "bytes": 10706562,
+          "mime": "video/mp4",
+          "width": 1920,
+          "height": 1080,
+          "durationSec": 7.93,
+          "promptRev": 2,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T03:34:26.323Z",
+          "reviewedAt": "2026-11-01T03:36:21.967Z",
+          "web": {
+            "video": "future-city/web/future-city__video__v001__720.mp4",
+            "videoPhone": "future-city/web/future-city__video__v001__480.mp4",
+            "poster": "future-city/web/future-city__video__v001__poster.webp"
+          }
+        }
+      ]
+    },
+    "earth-ending": {
+      "id": "earth-ending",
+      "prompts": {
+        "image": [
+          {
+            "rev": 1,
+            "kind": "image",
+            "fields": {
+              "scene": "Planet Earth seen from far out in space, smaller in frame than the opening shot, its thin blue atmosphere glowing around the lit crescent, surrounded by a great deal of darkness.",
+              "style": "Photoreal large-format documentary photography, Alexa 65 look, Master Prime optics, fine natural film grain, true-to-life textures, restrained and unstylized, the realism of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Level with the planet, 135 mm equivalent, from much further away than the opening.",
+              "cameraMove": "None. The empty space around the planet should imply distance and departure.",
+              "lighting": "The same single hard sun from camera left as earth-opening, with true black shadows.",
+              "composition": "Earth smaller, in the upper center of frame, taking about a third of the height. The lower half is empty for large text and a call to action.",
+              "environment": "Deep space with a sparse, realistic starfield. Nothing else.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Blue #7FB8E8 limb, deep black everywhere else, the smallest trace of orange at the terminator.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Physically correct Rayleigh scattering. No stylized glow.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "Single still image, no motion.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, nebula, galaxy clouds, moon, spacecraft, oversized stars, fantasy space art",
+              "continuity": "Same sun direction and atmosphere color as the approved earth-opening image. It should feel like the same photograph, taken later and further away."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          }
+        ],
+        "video": [
+          {
+            "rev": 1,
+            "kind": "video",
+            "fields": {
+              "scene": "Earth seen from space while the camera slowly drifts away. The planet shrinks gradually, with clouds moving almost imperceptibly.",
+              "style": "Photoreal large-format documentary cinematography, Alexa 65 look, 24 fps with a natural 180 degree shutter, fine film grain, physically plausible motion, the restraint of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Level with the planet, long lens.",
+              "cameraMove": "A very slow, perfectly smooth pull-back. The planet reduces by about 15% across the clip. No rotation of the camera.",
+              "lighting": "The same single hard sun from camera left as the opening, unchanging.",
+              "composition": "Earth upper center throughout. Lower half stays empty for text.",
+              "environment": "Deep space with a sparse starfield that holds still.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Blue limb on deep black.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Stable limb glow and slow cloud drift only.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, spinning planet, stars streaking, fast zoom",
+              "continuity": "Use the approved earth-ending image as the first frame, and match the approved earth-opening image for look."
+            },
+            "createdAt": "2026-10-31T16:06:43.220Z",
+            "author": "director",
+            "trigger": "seed"
+          }
+        ]
+      },
+      "assets": []
+    },
+    "nose": {
+      "id": "nose",
+      "prompts": {
+        "image": [
+          {
+            "rev": 1,
+            "kind": "image",
+            "fields": {
+              "scene": "A school-age child in profile, facing left, breathing in on a smoggy city street, seen as a dark silhouette against a low sun. Only the outline of the forehead, nose, lips and chin catches the light. The face itself stays in deep shadow with no visible features. Thousands of fine particles hang in the air, lit by the sun, drifting toward the nose, with one small glowing orange particle among them.",
+              "style": "Photoreal large-format documentary photography, Alexa 65 look, Master Prime optics, fine natural film grain, true-to-life textures, restrained and unstylized, the realism of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Exact side view at face height, level horizon, 85 mm equivalent.",
+              "cameraMove": "None.",
+              "lighting": "A low sun directly behind, just in front of the bridge of the nose, giving a thin warm rim along the profile and a soft red glow through the tip of the nose and the lips. No light on the face from the front.",
+              "composition": "Head on the right of the frame, filling it from top to bottom, cut off by the right edge. Nose tip about 58% across and just above mid-height. The left half of the frame is empty soft haze for a title and text.",
+              "environment": "The same street behind, thrown far out of focus: soft gray tower shapes only. The collar of the same navy jacket at the bottom edge.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Brown-gray haze, warm amber rim, near-black silhouette, one orange particle.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Fine airborne particles of varied size in the light, sharp near the nose and soft elsewhere. No smoke plumes.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "Single still image, no motion.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, visible eyes, visible facial detail, front-lit face, identifiable person, portrait lighting, distress, coughing, tears, face mask, adult face, beard, glasses",
+              "continuity": "Attach the approved child-city image as the reference for the hair, the jacket and the color of the air. The same child at the same moment, now seen from the side."
+            },
+            "createdAt": "2026-11-01T04:38:04.089Z",
+            "author": "director",
+            "trigger": "seed"
+          }
+        ],
+        "video": [
+          {
+            "rev": 1,
+            "kind": "video",
+            "fields": {
+              "scene": "One continuous shot starting exactly on the attached image. The child breathes in slowly. The particles are pulled toward the nose, faster as they get closer, and the glowing orange particle goes in first. The camera follows it, closing on the nostril until its darkness fills the whole frame.",
+              "style": "Photoreal large-format documentary cinematography, Alexa 65 look, 24 fps with a natural 180 degree shutter, fine film grain, physically plausible motion, the restraint of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Starts exactly as the attached image: exact side view at face height.",
+              "cameraMove": "A slow push-in that builds steadily, centered on the nostril, from the full profile to the inside of the nostril. The last second is completely black. No cuts, no shake, no roll.",
+              "lighting": "The same low sun behind. The rim of light slides off the edges of the frame as the camera closes in.",
+              "composition": "The nostril holds its place on screen and grows until it fills the frame. The left half stays empty haze until the push-in takes it.",
+              "environment": "The same out-of-focus street. The child does not turn, walk or change expression.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Brown-gray haze, warm amber rim, near-black silhouette, one orange particle.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Particles speed up along curved paths with the inhale, like dust drawn toward a vent. The air stays calm everywhere else.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, visible eyes, visible facial detail, front-lit face, skin pores, nose hair, wet surfaces, mucus, gore, distress, coughing, face turning",
+              "continuity": "First frame: the attached nose image, exactly. Last frame: pure black, because the film continues from black inside the airway."
+            },
+            "createdAt": "2026-11-01T04:38:04.096Z",
+            "author": "director",
+            "trigger": "seed"
+          },
+          {
+            "rev": 2,
+            "kind": "video",
+            "fields": {
+              "scene": "One continuous shot starting exactly on the attached image. The child stays completely still and breathes in slowly. The dust in the air is pulled toward the nose, faster as it gets closer, and the glowing orange particle drifts in first and disappears under the nose. The camera follows it, closing on the underside of the nose until the dark of the nostril fills the whole frame.",
+              "style": "Photoreal large-format documentary cinematography, Alexa 65 look, 24 fps with a natural 180 degree shutter, fine film grain, physically plausible motion, the restraint of a BBC or National Geographic environmental documentary.",
+              "cameraAngle": "Starts exactly as the attached image: exact side view at face height.",
+              "cameraMove": "Almost still for the first 2 seconds, then a push-in that builds steadily toward the underside of the nose, where it glows red. The last second is completely black. No cuts, no shake, no roll.",
+              "lighting": "The same low sun half hidden behind the bridge of the nose. The face stays in deep shadow and never brightens. The rim of light and the red glow slide off the edges of the frame as the camera closes in.",
+              "composition": "The underside of the nose holds its place on screen and grows until it fills the frame. The left of the frame stays empty haze until the push-in takes it.",
+              "environment": "The same out-of-focus street. The head, hair and jacket do not move.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Brown-gray haze, warm amber rim, near-black silhouette, one orange particle.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Particles speed up along curved paths with the inhale, like dust drawn toward a vent. The air stays calm everywhere else.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, visible eyes, visible facial detail, front-lit face, skin pores, nose hair, wet surfaces, mucus, gore, distress, coughing, face turning, brightening the face, blinking, eye opening, mouth opening, birds, sun moving",
+              "continuity": "First frame: the attached nose image, exactly. Last frame: pure black, because the film continues from black inside the airway."
+            },
+            "createdAt": "2026-11-01T04:38:04.096Z",
+            "author": "claude",
+            "trigger": "chat",
+            "basedOn": 1,
+            "summary": "Rewritten around the delivered image: the child stays still, the face stays dark, and the camera closes on the red glow under the nose.",
+            "changes": [
+              {
+                "field": "scene",
+                "before": "One continuous shot starting exactly on the attached image. The child breathes in slowly. The particles are pulled toward the nose, faster as they get closer, and the glowing orange particle goes in first. The camera follows it, closing on the nostril until its darkness fills the whole frame.",
+                "after": "One continuous shot starting exactly on the attached image. The child stays completely still and breathes in slowly. The dust in the air is pulled toward the nose, faster as it gets closer, and the glowing orange particle drifts in first and disappears under the nose. The camera follows it, closing on the underside of the nose until the dark of the nostril fills the whole frame.",
+                "why": "The image has a real orange particle and dust. They should do the moving, not the child."
+              },
+              {
+                "field": "cameraMove",
+                "before": "A slow push-in that builds steadily, centered on the nostril, from the full profile to the inside of the nostril. The last second is completely black. No cuts, no shake, no roll.",
+                "after": "Almost still for the first 2 seconds, then a push-in that builds steadily toward the underside of the nose, where it glows red. The last second is completely black. No cuts, no shake, no roll.",
+                "why": "A still start gives the title time to arrive before the frame starts closing."
+              },
+              {
+                "field": "lighting",
+                "before": "The same low sun behind. The rim of light slides off the edges of the frame as the camera closes in.",
+                "after": "The same low sun half hidden behind the bridge of the nose. The face stays in deep shadow and never brightens. The rim of light and the red glow slide off the edges of the frame as the camera closes in.",
+                "why": "The image shows an eye and a cheek in shadow. The film crushes them, and a brighter face would bring them back."
+              },
+              {
+                "field": "composition",
+                "before": "The nostril holds its place on screen and grows until it fills the frame. The left half stays empty haze until the push-in takes it.",
+                "after": "The underside of the nose holds its place on screen and grows until it fills the frame. The left of the frame stays empty haze until the push-in takes it.",
+                "why": "Names the place the camera goes, which is the red glow under the nose."
+              },
+              {
+                "field": "environment",
+                "before": "The same out-of-focus street. The child does not turn, walk or change expression.",
+                "after": "The same out-of-focus street. The head, hair and jacket do not move.",
+                "why": "Any movement in the head would show against the rim of light."
+              },
+              {
+                "field": "negative",
+                "before": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, visible eyes, visible facial detail, front-lit face, skin pores, nose hair, wet surfaces, mucus, gore, distress, coughing, face turning",
+                "after": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, visible eyes, visible facial detail, front-lit face, skin pores, nose hair, wet surfaces, mucus, gore, distress, coughing, face turning, brightening the face, blinking, eye opening, mouth opening, birds, sun moving",
+                "why": "Blocks the two things that would reveal the face, and stops the sun drifting off the nose."
+              }
+            ]
+          }
+        ]
+      },
+      "assets": [
+        {
+          "id": "9b531793-60fa-4d04-9fdc-bddca3ed36b2",
+          "kind": "image",
+          "version": 1,
+          "file": "nose/nose__image__v001.png",
+          "originalName": "Child_silhouette_1920.png",
+          "bytes": 996627,
+          "mime": "image/png",
+          "width": 1920,
+          "height": 1080,
+          "promptRev": 1,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T05:16:20.459Z",
+          "reviewedAt": "2026-11-01T05:16:20.605Z",
+          "web": {
+            "image": "nose/web/nose__image__v001__1920.webp",
+            "imagePhone": "nose/web/nose__image__v001__960.webp"
+          }
+        },
+        {
+          "id": "448d64a4-76e9-4f4f-9d78-5e8cc225920f",
+          "kind": "video",
+          "version": 1,
+          "file": "nose/nose__video__v001.mp4",
+          "originalName": "Child_inhaling_dust_particle_dc12fef3_1080p_gwr_video_mvp.mp4",
+          "bytes": 7029831,
+          "mime": "video/mp4",
+          "width": 1920,
+          "height": 1080,
+          "durationSec": 7.93,
+          "promptRev": 2,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T05:16:20.666Z",
+          "reviewedAt": "2026-11-01T05:16:22.627Z",
+          "web": {
+            "video": "nose/web/nose__video__v001__720.mp4",
+            "videoPhone": "nose/web/nose__video__v001__480.mp4",
+            "poster": "nose/web/nose__video__v001__poster.webp"
+          }
+        }
+      ]
+    },
+    "windpipe": {
+      "id": "windpipe",
+      "prompts": {
+        "image": [
+          {
+            "rev": 1,
+            "kind": "image",
+            "fields": {
+              "scene": "Looking straight down the inside of a human windpipe. Translucent C-shaped cartilage rings recede into darkness one after another, open at the back where a soft membrane runs between them. Far ahead the tube divides at the carina into two dark openings. Cold blue air streams flow along the walls, and one tiny glowing orange particle floats ahead at the vanishing point.",
+              "style": "Premium scientific visualization in the manner of a museum exhibit or a Nature cover, photoreal translucent tissue rendered like a scanning electron micrograph colored for clarity. Calm and clinical, not a horror image.",
+              "cameraAngle": "First-person inside the airway, centered, 24 mm equivalent, stable horizon with the soft membrane at the bottom.",
+              "cameraMove": "None.",
+              "lighting": "Soft dark-field lighting, so the translucent rings glow at their edges against black. The particle gives a small warm light on the nearest walls.",
+              "composition": "The vanishing point sits about 60% across and at mid-height, so the left third stays darker and calmer for a title and text. The rings frame it in a perspective that reads at once.",
+              "environment": "Inside the airway only. Smooth, dry, pale walls. Pure black beyond the rings.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Pale desaturated rose-ivory tissue, cold blue air streams, a single orange particle.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm. Very clean blacks, as in a microscope image.",
+              "vfx": "Thin laminar airflow streaks, barely visible. Fine particles drifting along the airflow.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "Single still image, no motion.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, blood, gore, wet organs, surgical photo, endoscopy photo, mucus, slime, horror tunnel, cave look, stone texture, disease, labels, arrows",
+              "continuity": "Attach the approved human-lungs image as the look reference: the same tissue color, the same black, the same blue air and orange particle. The windpipe at the top of that image is this one, seen from the inside."
+            },
+            "createdAt": "2026-11-01T05:04:10.242Z",
+            "author": "director",
+            "trigger": "seed"
+          }
+        ],
+        "video": [
+          {
+            "rev": 1,
+            "kind": "video",
+            "fields": {
+              "scene": "One continuous flight down the inside of the windpipe, starting exactly on the attached image and following the glowing orange particle. The rings pass steadily on every side, the carina opens ahead with its two dark openings, and the camera follows the particle into the wider one until the frame is black.",
+              "style": "Premium scientific visualization in motion, museum-grade, translucent tissue rendered like a scanning electron micrograph colored for clarity. Calm and clinical, no wet surfaces.",
+              "cameraAngle": "Starts exactly as the attached image: first-person inside the airway, stable horizon.",
+              "cameraMove": "A smooth forward glide at constant speed, centered on the particle, drifting gently toward the wider opening at the end. No cuts, no shake, no roll.",
+              "lighting": "Soft self-illuminated tissue, with translucent walls glowing faintly and the warm particle lighting the nearby walls as it passes. The dark of the opening takes over at the end.",
+              "composition": "The particle stays at the vanishing point with the rings converging on it. The left third stays calmer for a title.",
+              "environment": "Inside the airway only. Smooth, dry, pale walls with visible C-shaped rings, then the carina and its two openings.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Pale rose-ivory walls, cold blue air streaks, a single orange particle.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Fine laminar airflow streaks moving with the camera. Other small particles drift past, slower than the orange one. No mucus, no fluid.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, blood, gore, wet organic surfaces, mucus, tentacles, horror tunnel, cave look, stone texture, disease, labels",
+              "continuity": "First frame: the attached windpipe image, exactly. Last frame: pure black, because the film comes out of black onto the whole pair of lungs."
+            },
+            "createdAt": "2026-11-01T05:04:10.245Z",
+            "author": "director",
+            "trigger": "seed"
+          },
+          {
+            "rev": 2,
+            "kind": "video",
+            "fields": {
+              "scene": "One continuous flight down the inside of the windpipe, starting exactly on the attached image and following the glowing orange particle. The camera passes through the pale rings one after another as they slide past on every side, the fork ahead grows larger, and the camera follows the particle into the dark opening on the right until the frame is black.",
+              "style": "Premium scientific visualization in motion, museum-grade, translucent tissue rendered like a scanning electron micrograph colored for clarity. Calm and clinical, no wet surfaces.",
+              "cameraAngle": "Starts exactly as the attached image, with a stable horizon and the soft membrane along the bottom.",
+              "cameraMove": "A smooth forward glide at constant speed toward the particle, passing through the rings, then drifting right into the dark opening. The last second is completely black. No cuts, no shake, no roll.",
+              "lighting": "Soft self-illuminated tissue, with translucent walls glowing faintly and the warm particle lighting the nearby walls as it passes. The dark of the opening takes over at the end.",
+              "composition": "The particle stays ahead of the camera, right of center. As the rings pass out of the frame, the fork fills it.",
+              "environment": "The same pale rings, the same membrane along the bottom, and the same ridge between the two openings. The rings keep their shape and spacing as they pass, with black and blue air in the gaps between them.",
+              "palette": "Film palette anchors: deep black #030507, atmospheric blue #7FB8E8, pollution gray #8C8A80, subtle orange #E8792B. Pale rose-ivory walls, cold blue air streaks, a single orange particle.",
+              "grade": "Filmic low-contrast grade with deep clean blacks, soft highlight roll-off, muted saturation, a slight teal bias in shadow and warmth only where real light is warm.",
+              "vfx": "Fine laminar airflow streaks moving with the camera. Other small particles drift past, slower than the orange one. No mucus, no fluid.",
+              "aspect": "16:9 widescreen, delivered at 1920x1080 or larger. Keep the essential subject inside the center 56% so the film can crop to a phone.",
+              "duration": "8 seconds, one continuous unbroken shot, no audio.",
+              "negative": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, blood, gore, wet organic surfaces, mucus, tentacles, horror tunnel, cave look, stone texture, disease, labels, rings changing shape, rings melting or merging, skin, pores, hair, sudden zoom, rounded frame corners, film border",
+              "continuity": "First frame: the attached windpipe image, exactly. Last frame: pure black, because the film comes out of black onto the whole pair of lungs."
+            },
+            "createdAt": "2026-11-01T05:04:10.245Z",
+            "author": "claude",
+            "trigger": "chat",
+            "basedOn": 1,
+            "summary": "Rewritten around the delivered image, with the faults of the nose clip ruled out by name.",
+            "changes": [
+              {
+                "field": "scene",
+                "before": "One continuous flight down the inside of the windpipe, starting exactly on the attached image and following the glowing orange particle. The rings pass steadily on every side, the carina opens ahead with its two dark openings, and the camera follows the particle into the wider one until the frame is black.",
+                "after": "One continuous flight down the inside of the windpipe, starting exactly on the attached image and following the glowing orange particle. The camera passes through the pale rings one after another as they slide past on every side, the fork ahead grows larger, and the camera follows the particle into the dark opening on the right until the frame is black.",
+                "why": "Follows what the image actually shows: the particle is already in the right-hand opening."
+              },
+              {
+                "field": "cameraAngle",
+                "before": "Starts exactly as the attached image: first-person inside the airway, stable horizon.",
+                "after": "Starts exactly as the attached image, with a stable horizon and the soft membrane along the bottom.",
+                "why": "Holds the first frame exactly, so it joins cleanly out of black."
+              },
+              {
+                "field": "cameraMove",
+                "before": "A smooth forward glide at constant speed, centered on the particle, drifting gently toward the wider opening at the end. No cuts, no shake, no roll.",
+                "after": "A smooth forward glide at constant speed toward the particle, passing through the rings, then drifting right into the dark opening. The last second is completely black. No cuts, no shake, no roll.",
+                "why": "The nose clip jumped in scale halfway, so the speed is fixed and the end is named."
+              },
+              {
+                "field": "composition",
+                "before": "The particle stays at the vanishing point with the rings converging on it. The left third stays calmer for a title.",
+                "after": "The particle stays ahead of the camera, right of center. As the rings pass out of the frame, the fork fills it.",
+                "why": "Tells the tool where the frame goes as the rings leave it."
+              },
+              {
+                "field": "environment",
+                "before": "Inside the airway only. Smooth, dry, pale walls with visible C-shaped rings, then the carina and its two openings.",
+                "after": "The same pale rings, the same membrane along the bottom, and the same ridge between the two openings. The rings keep their shape and spacing as they pass, with black and blue air in the gaps between them.",
+                "why": "Stops the rings turning into something else as they pass."
+              },
+              {
+                "field": "negative",
+                "before": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, blood, gore, wet organic surfaces, mucus, tentacles, horror tunnel, cave look, stone texture, disease, labels",
+                "after": "text, captions, subtitles, watermark, logos, brand names, signage with readable words, UI, frames, borders, cartoon, illustration, anime, video game look, CGI plastic look, oversaturation, neon, HDR halos, purple gradients, lens flare spam, camera shake, whip pans, fast zoom, jump cuts, scene changes, morphing, warping geometry, flicker, frame blending artifacts, looping seams, music, dialogue, sound, blood, gore, wet organic surfaces, mucus, tentacles, horror tunnel, cave look, stone texture, disease, labels, rings changing shape, rings melting or merging, skin, pores, hair, sudden zoom, rounded frame corners, film border",
+                "why": "Blocks the skin and rounded frame corners that ruined the second half of the nose clip."
+              }
+            ]
+          }
+        ]
+      },
+      "assets": [
+        {
+          "id": "f0cf5047-983a-4398-894d-8dae3cfba47d",
+          "kind": "image",
+          "version": 1,
+          "file": "windpipe/windpipe__image__v001.png",
+          "originalName": "Inside_human_windpipe_viewing_di…_9632f773_2K-clean.png",
+          "bytes": 3292112,
+          "mime": "image/png",
+          "width": 2752,
+          "height": 1536,
+          "promptRev": 1,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T05:16:22.643Z",
+          "reviewedAt": "2026-11-01T05:16:22.917Z",
+          "web": {
+            "image": "windpipe/web/windpipe__image__v001__1920.webp",
+            "imagePhone": "windpipe/web/windpipe__image__v001__960.webp"
+          }
+        },
+        {
+          "id": "303f1b8c-2b27-4fa6-8d00-d7026754d134",
+          "kind": "video",
+          "version": 1,
+          "file": "windpipe/windpipe__video__v001.mp4",
+          "originalName": "Camera_gliding_down_windpipe_6ba85047_1080p_gwr_video_mvp.mp4",
+          "bytes": 10274952,
+          "mime": "video/mp4",
+          "width": 1920,
+          "height": 1080,
+          "durationSec": 7.93,
+          "promptRev": 2,
+          "status": "accepted",
+          "uploadedAt": "2026-11-01T05:16:23.033Z",
+          "reviewedAt": "2026-11-01T05:16:26.163Z",
+          "web": {
+            "video": "windpipe/web/windpipe__video__v001__720.mp4",
+            "videoPhone": "windpipe/web/windpipe__video__v001__480.mp4",
+            "poster": "windpipe/web/windpipe__video__v001__poster.webp"
+          }
+        }
+      ]
+    }
+  }
+}

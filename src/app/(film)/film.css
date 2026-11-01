@@ -1,0 +1,340 @@
+/* The film. Layers inside <main>: canvas (-2), DOM art (-1), stage text (auto). */
+main { position: relative; z-index: var(--z-content); }
+
+#gl { position: fixed; inset: 0; z-index: -2; pointer-events: none; }
+
+/* Curtain */
+#curtain { position: fixed; inset: 0; z-index: var(--z-curtain); pointer-events: none; visibility: hidden; overflow: hidden; }
+.curtain__panel {
+  position: absolute; inset: -12vh 0;
+  background: linear-gradient(transparent, var(--c-curtain) 12vh, var(--c-curtain) calc(100% - 12vh), transparent);
+}
+
+/* Loader: the name, at mega size, then it settles into the corner. */
+#loader {
+  position: fixed; inset: 0; z-index: var(--z-loader);
+  display: grid; align-content: end; gap: var(--u); padding: var(--gutter);
+  background: var(--c-bg); color: var(--c-fg);
+  /* The promise of a short loader must not depend on the script arriving in time. */
+  animation: loader-lift 0.3s ease 2.2s forwards;
+}
+@keyframes loader-lift { to { opacity: 0; visibility: hidden; } }
+html:not(.js) #loader, html.no-loader #loader, #loader[hidden] { display: none; }
+.loader__word {
+  display: block; width: max-content;
+  font-family: var(--f-display); font-size: var(--t-mega); font-stretch: 62%; font-weight: 640;
+  line-height: 0.86; letter-spacing: -0.012em; white-space: nowrap;
+}
+.loader__meta {
+  display: flex; justify-content: space-between;
+  font-family: var(--f-mono); font-size: var(--t-mono); color: var(--c-muted);
+  font-variant-numeric: tabular-nums;
+}
+.loader__bar { height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; }
+
+/* Frame */
+.frame {
+  position: fixed; inset: 0 0 auto 0; z-index: var(--z-header);
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: var(--u) var(--gutter);
+  pointer-events: none;
+  background: linear-gradient(180deg, rgb(3 5 7 / calc(0.66 * (1 - var(--flip, 0)))), transparent);
+}
+/* --flip turns the ink dark on the film's one white-out, where dark edges would look like dirt. */
+.frame, .hud { color: color-mix(in srgb, var(--c-bg) calc(var(--flip, 0) * 100%), var(--c-fg)); }
+.frame > * { pointer-events: auto; }
+.wordmark {
+  font-family: var(--f-display); font-size: var(--t-m); font-stretch: 62%; font-weight: 640;
+  letter-spacing: 0.012em; line-height: 1.2; white-space: nowrap;
+}
+.wordmark a { display: block; padding-block: 0.15em; transition: letter-spacing 0.6s cubic-bezier(0.37, 0, 0.63, 1); }
+.wordmark a:focus-visible { letter-spacing: 0.09em; }
+@media (hover: hover) { .wordmark a:hover { letter-spacing: 0.09em; } }
+.frame__nav { display: flex; gap: calc(var(--u) * 2); font-size: var(--t-s); }
+.frame__nav a { padding-block: 0.3em; }
+
+/* Underline draw: the nav's one treatment. */
+.draw {
+  background: linear-gradient(currentColor 0 0) left bottom / 0% 1px no-repeat;
+  transition: background-size 0.5s cubic-bezier(0.37, 0, 0.63, 1);
+}
+.draw:focus-visible, .draw[aria-current='page'] { background-size: 100% 1px; }
+@media (hover: hover) { .draw:hover { background-size: 100% 1px; } }
+
+/* Chapters */
+.chapter { position: relative; height: calc(var(--len) * 100svh); }
+.stage { position: sticky; top: 0; height: 100svh; overflow: clip; }
+.stage__in {
+  position: absolute; inset: 0;
+  padding: calc(var(--u) * 6) var(--gutter) calc(var(--hud) + var(--u) * 1.5);
+  display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter);
+}
+
+/* Fallback art: a fixed layer in motion mode, the section's own background otherwise. */
+.art { position: absolute; inset: 0; z-index: -1; overflow: clip; }
+.art img { width: 100%; height: 100%; object-fit: cover; }
+.motion .art { position: fixed; visibility: hidden; opacity: 0; }
+.motion #ch-1 .art { visibility: visible; opacity: 1; }
+/* The canvas sits under the art, so the poster dissolves straight into the live picture. */
+html.gl-on .art--live { background: none; }
+html.gl-on .art--live > * { opacity: 0; transition: opacity 0.6s ease; }
+/* The canvas will draw these, so nothing should download them. Hidden, a lazy image never loads. */
+html.motion.gl .art--live:not(.art--1) img { display: none; }
+
+.art--2 { background: radial-gradient(120% 90% at 22% 8%, #6f8ca6 0%, #3a4a58 32%, #1a1e22 70%, #090b0d 100%); }
+.art--3 {
+  background:
+    linear-gradient(0deg, rgb(3 5 7 / 0.92) 0%, transparent 26%),
+    radial-gradient(70% 34% at 72% 74%, rgb(232 121 43 / 0.34) 0%, transparent 72%),
+    linear-gradient(180deg, #2c2b28 0%, #5c5850 48%, #6b6152 68%, #17161a 100%);
+}
+.art--4 {
+  background:
+    radial-gradient(38% 46% at 66% 46%, rgb(232 121 43 / 0.2) 0%, transparent 74%),
+    radial-gradient(90% 90% at 66% 46%, #1c1412 0%, #0a0808 62%, #030507 100%);
+}
+.art--5 { background: linear-gradient(180deg, #3b3934 0%, #625d52 44%, #7a7366 62%, #2a2826 100%); }
+.art--6 {
+  background:
+    linear-gradient(0deg, rgb(3 5 7 / 0.55) 0%, transparent 34%),
+    linear-gradient(180deg, #113457 0%, #2b6390 46%, #5f93b8 70%, #274a57 100%);
+}
+.art--7 { background: var(--c-bg); }
+
+/* Scrims keep ink at AA over moving pictures. They live on the fixed art layer and crossfade with
+   it: on the sticky stage they would slide up with the page and draw a hard edge across the film. */
+.art::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: var(--scrim, none);
+  opacity: var(--scrim-o, 1);
+}
+
+/* Title cards: role one. Hand-broken lines, masked so they can rise out of nothing. */
+.title {
+  font-family: var(--f-display); font-size: var(--t-title); font-stretch: 62%; font-weight: 640;
+  line-height: 0.9; letter-spacing: -0.006em; text-wrap: nowrap;
+}
+.line { display: block; width: max-content; overflow-y: clip; overflow-x: visible; padding-block: 0.04em; margin-block: -0.04em; white-space: nowrap; }
+.line__in { display: block; }
+
+/* Narrator: role two. */
+.voice { font-family: var(--f-voice); font-style: italic; font-size: var(--t-l); line-height: 1.16; max-width: 22ch; }
+
+/* Instruments: role three. Real data only. */
+.slate { font-family: var(--f-mono); font-size: var(--t-mono); color: var(--c-muted); letter-spacing: 0.02em; }
+.fact { font-size: var(--t-s); line-height: 1.5; max-width: 34ch; }
+/* Padded, not sized, so the target stays large while the line it sits in keeps its height. */
+.fact a, .cite {
+  padding: 0.5em 0.2em; line-height: 1;
+  font-family: var(--f-mono); font-size: var(--t-mono); color: var(--c-muted);
+  text-decoration: underline; text-underline-offset: 0.25em; text-decoration-thickness: 1px;
+  transition: color 0.3s ease;
+}
+@media (hover: hover) { .fact a:hover, .cite:hover { color: var(--c-fg); } }
+.fact a:focus-visible, .cite:focus-visible { color: var(--c-fg); }
+
+/* 01 Poster: title low left, Earth to the right. */
+#ch-1 .stage__in { align-content: end; }
+#ch-1 .title { grid-column: 1 / span 8; }
+#ch-1 .voice { grid-column: 1 / span 6; margin-top: calc(var(--u) * 2); }
+
+/* 02 Statement: title high left, data low right. */
+#ch-2 { --scrim: linear-gradient(180deg, rgb(3 5 7 / 0.5) 0%, rgb(3 5 7 / 0.2) 42%, rgb(3 5 7 / 0.2) 58%, rgb(3 5 7 / 0.66) 100%); }
+#ch-2 .title { grid-column: 1 / span 7; align-self: start; }
+#ch-2 .voice { grid-column: 1 / span 5; align-self: end; }
+#ch-2 .facts { grid-column: 9 / span 4; align-self: end; display: grid; gap: calc(var(--u) * 2); }
+
+/* 03 Labels: title top, four sources spread across the frame. */
+#ch-3 { --scrim: linear-gradient(180deg, rgb(3 5 7 / 0.42) 0%, transparent 42%, rgb(3 5 7 / 0.5) 100%); }
+#ch-3 .title { grid-column: 1 / span 9; }
+#ch-3 .labels { grid-column: 1 / -1; align-self: end; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gutter); list-style: none; padding: 0; }
+.label__name { display: block; font-weight: 600; font-size: var(--t-s); line-height: 1.25; margin-bottom: 0.35em; }
+.label__text { font-size: var(--t-s); line-height: 1.45; color: rgb(238 242 244 / 0.86); }
+
+/* Desktop: each label sits beside the thing it names. Plate.tsx sets the position.
+   Grid placement is reset because an absolute grid child would otherwise use its grid area as its box. */
+.pins #ch-3 .labels { position: absolute; inset: 0; display: block; grid-column: auto; grid-row: auto; align-self: stretch; pointer-events: none; }
+.pins #ch-3 .labels li {
+  position: absolute; top: 0; left: 0; width: 17rem; padding: 0.7rem 0.9rem;
+  pointer-events: auto; background: rgb(3 5 7 / 0.62); border-left: 1px solid var(--c-fg);
+}
+
+/* 04 The sentence and the path of a particle hold the left, and the lungs get the right to themselves. */
+#ch-4 { --scrim: linear-gradient(90deg, rgb(3 5 7 / 0.76) 0%, rgb(3 5 7 / 0.56) 30%, transparent 50%); }
+#ch-4 .stage__in { grid-template-rows: auto 1fr auto; row-gap: calc(var(--u) * 2); }
+#ch-4 .title { font-size: clamp(3.6rem, 0.8rem + 6.8vw, 8rem); }
+.turn { grid-column: 1 / span 6; grid-row: 1; display: grid; }
+.turn > * { grid-area: 1 / 1; }
+#ch-4 .gauge { grid-column: 1 / span 3; grid-row: 2; align-self: center; list-style: none; padding: 0; display: grid; gap: calc(var(--u) * 2); }
+.gauge li { font-family: var(--f-mono); font-size: var(--t-mono); color: color-mix(in srgb, var(--c-fg) calc(var(--on, 0) * 100%), var(--c-muted)); padding-left: 1.4em; position: relative; }
+.gauge li::before { content: ''; position: absolute; left: 0; top: 50%; width: calc(0.7em + var(--on, 0) * 0.45em); height: 1px; background: currentColor; }
+#ch-4 .facts { grid-column: 1 / span 5; grid-row: 3; display: grid; gap: calc(var(--u) * 1.5); }
+#ch-4 .fact { max-width: 44ch; }
+
+/* 05 One line, up and to the left, so it covers neither the child nor the sun. */
+#ch-5 { --scrim: linear-gradient(180deg, rgb(3 5 7 / 0.72) 0%, rgb(3 5 7 / 0.36) 40%, transparent 62%, rgb(3 5 7 / 0.5) 100%); }
+#ch-5 .stage__in { grid-template-rows: auto 1fr auto; }
+#ch-5 .title { grid-column: 1 / span 7; font-size: clamp(3rem, 0.6rem + 6.2vw, 7.5rem); }
+#ch-5 .fact { grid-column: 1 / span 4; grid-row: 3; }
+
+/* 06 Emerging list. The title stays left of the sun, which sits just above center. */
+#ch-6 { --scrim: linear-gradient(180deg, rgb(3 5 7 / 0.56) 0%, rgb(3 5 7 / 0.16) 46%, transparent 60%, rgb(3 5 7 / 0.66) 100%); }
+#ch-6 .title { grid-column: 1 / span 7; font-size: clamp(3rem, 0.6rem + 6.2vw, 7.5rem); }
+#ch-6 .solutions { grid-column: 9 / span 4; list-style: none; padding: 0; font-size: var(--t-m); line-height: 1.25; display: grid; gap: 0.5em; align-self: start; }
+#ch-6 .facts { grid-column: 1 / -1; align-self: end; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gutter); }
+
+/* 07 Finale. Text left and Earth right, as the film opened, with the title kept off the limb. */
+#ch-7 .stage__in { align-content: space-between; }
+#ch-7 .title { grid-column: 1 / span 9; font-size: clamp(4.1rem, 1.2rem + 8.4vw, 9rem); }
+/* The link to this chapter lands on its title, not on the flash at its start. */
+.motion #ch-7 { scroll-margin-top: calc(-4.3 * 100svh); }
+.art--7::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  opacity: var(--bloom, 0);
+  background: radial-gradient(circle at 50% 34%, #fffdf7 0%, #fff4e0 30%, rgb(255 238 212 / 0.86) 62%, rgb(255 238 212 / 0.66) 100%);
+}
+#ch-7 .finale { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: end; flex-wrap: wrap; gap: calc(var(--u) * 2); }
+.protect { font-family: var(--f-display); font-stretch: 62%; font-weight: 640; font-size: var(--t-xl); line-height: 0.96; }
+.protect span { display: block; }
+
+/* The inhale: fill rises from below, arrow travels. */
+.cta {
+  position: relative; isolation: isolate; overflow: clip;
+  display: inline-flex; align-items: center; gap: 0.6em; min-height: 3.25rem; padding: 0.8em 1.2em;
+  font-family: var(--f-display); font-stretch: 75%; font-weight: 600; font-size: var(--t-m); line-height: 1;
+  border: 1px solid var(--c-fg);
+  transition: color 0.45s cubic-bezier(0.37, 0, 0.63, 1);
+}
+.cta::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; background: var(--c-fg);
+  transform: translateY(101%);
+  transition: transform 0.55s cubic-bezier(0.37, 0, 0.63, 1);
+}
+.cta__arrow { display: inline-block; transition: translate 0.55s cubic-bezier(0.37, 0, 0.63, 1); }
+.cta:focus-visible, .cta:active { color: var(--c-bg); }
+.cta:focus-visible::before, .cta:active::before { transform: none; }
+.cta:focus-visible .cta__arrow { translate: 0.35em 0; }
+@media (hover: hover) {
+  .cta:hover { color: var(--c-bg); }
+  .cta:hover::before { transform: none; }
+  .cta:hover .cta__arrow { translate: 0.35em 0; }
+}
+
+/* The pointer: an ember, a ring that breathes, and a canvas for the dust it sheds. */
+.cursor { display: none; position: fixed; inset: 0; z-index: var(--z-cursor); pointer-events: none; overflow: clip; opacity: 0; transition: opacity 0.3s ease; }
+.cursor canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+html.has-cursor .cursor { display: block; }
+html.has-cursor .cursor.is-on { opacity: 1; }
+html.has-cursor, html.has-cursor * { cursor: none !important; }
+.cursor__dot, .cursor__ring { position: absolute; top: 0; left: 0; border-radius: 50%; will-change: transform; }
+.cursor__dot::before { content: ''; display: block; width: 0.5rem; height: 0.5rem; margin: -0.25rem; border-radius: 50%; background: var(--c-accent); box-shadow: 0 0 0.6rem rgb(232 121 43 / 0.7); transition: scale 0.25s ease; }
+.cursor.is-over .cursor__dot::before { scale: 0.5; }
+.cursor__ring::before { content: ''; display: block; width: 2.25rem; height: 2.25rem; margin: -1.125rem; border-radius: 50%; border: 1px solid rgb(238 242 244 / 0.85); box-shadow: 0 0 0 1px rgb(3 5 7 / 0.28); transition: background-color 0.3s ease; }
+.cursor.is-over .cursor__ring::before { background: rgb(238 242 244 / 0.16); }
+
+/* HUD */
+.hud {
+  position: fixed; inset: auto 0 0 0; z-index: var(--z-hud);
+  height: var(--hud); padding: 0 var(--gutter);
+  display: flex; align-items: center; justify-content: space-between; gap: var(--gutter);
+  font-family: var(--f-mono); font-size: var(--t-mono); font-variant-numeric: tabular-nums;
+  background: linear-gradient(0deg, rgb(3 5 7 / calc(0.72 * (1 - var(--flip, 0)))), transparent);
+}
+.ticks { display: flex; align-items: center; list-style: none; padding: 0; }
+.tick {
+  position: relative; display: grid; place-items: center; width: 1.75rem; height: 2rem;
+}
+.tick::before {
+  content: ''; width: 1.1rem; height: 2px; background: currentColor; opacity: 0.32;
+  transition: opacity 0.4s ease, scale 0.4s cubic-bezier(0.37, 0, 0.63, 1);
+}
+.tick[aria-current='true']::before { opacity: 1; scale: 1 2; }
+.tick__name {
+  position: absolute; bottom: 100%; left: 0; white-space: nowrap; padding: 0.3em 0.5em;
+  background: var(--c-bg); color: var(--c-fg); opacity: 0; translate: 0 4px; pointer-events: none;
+  transition: opacity 0.3s ease, translate 0.3s ease;
+}
+.tick:focus-visible .tick__name { opacity: 1; translate: 0 0; }
+.tick:focus-visible::before { opacity: 1; scale: 1 2; }
+@media (hover: hover) {
+  .tick:hover .tick__name { opacity: 1; translate: 0 0; }
+  .tick:hover::before { opacity: 1; scale: 1 2; }
+}
+.hud__left { display: flex; align-items: center; gap: calc(var(--u) * 1.5); min-width: 0; }
+.hud__now { white-space: nowrap; opacity: 0.8; }
+.hud__right { display: flex; align-items: center; gap: calc(var(--u) * 2.5); white-space: nowrap; }
+.hud__dim { opacity: 0.72; }
+.hud__pause { min-height: 2rem; padding: 0.2em 0.1em; background-position: left calc(100% - 0.3rem), left calc(100% - 0.3rem); }
+html:not(.motion) .hud__pause, html:not(.js) .hud__pause { display: none; }
+html:not(.js) .hud__breaths { display: none; }
+
+/* No motion, no JS: a normal, complete, designed document. Every chapter a screen of its own. */
+html:not(.motion) .chapter { height: auto; min-height: 100svh; }
+html:not(.motion) .stage { position: relative; height: auto; min-height: 100svh; overflow: visible; }
+html:not(.motion) .stage__in { position: relative; min-height: 100svh; padding-top: calc(var(--u) * 10); padding-bottom: calc(var(--hud) + var(--u) * 4); }
+html:not(.motion) .turn { gap: calc(var(--u) * 3); }
+html:not(.motion) .turn > * { grid-area: auto; }
+
+/* Sources page */
+.page { position: relative; isolation: isolate; padding: calc(var(--u) * 12) var(--gutter) calc(var(--u) * 8); display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); row-gap: calc(var(--u) * 10); }
+.page__air { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
+.page__reading { position: fixed; right: var(--gutter); bottom: var(--u); z-index: var(--z-hud); margin: 0; padding: 0.3em 0.6em; background: rgb(3 5 7 / 0.78); font-family: var(--f-mono); font-size: var(--t-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.page__end { grid-column: 1 / -1; font-size: var(--t-m); padding-bottom: calc(var(--u) * 3); }
+/* Each section its own grid, so a sticky heading stays inside its section and gives way to the next. */
+.page > section { grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; }
+.page__top { grid-column: 1 / -1; min-height: calc(100svh - var(--u) * 15); display: grid; grid-template-columns: subgrid; align-content: space-between; row-gap: calc(var(--u) * 4); }
+.page__title { grid-column: 1 / -1; text-wrap: nowrap; font-family: var(--f-display); font-size: var(--t-title); font-stretch: 62%; font-weight: 640; line-height: 0.9; }
+.page__intro { grid-column: 1 / span 7; }
+.page h2 { font-family: var(--f-display); font-size: var(--t-xl); font-stretch: 62%; font-weight: 640; line-height: 1; grid-column: 1 / span 4; position: sticky; top: calc(var(--u) * 8); align-self: start; }
+/* Below the picture, text scrolls under the header, with nothing behind it to carry a soft edge. */
+html.past-hero .frame { background: linear-gradient(180deg, var(--c-bg) 72%, transparent); padding-bottom: calc(var(--u) * 2.5); }
+.page__body { grid-column: 5 / span 8; display: grid; gap: calc(var(--u) * 4); }
+.page__body h3 { font-weight: 600; font-size: var(--t-m); margin-bottom: 0.5em; }
+.plain { list-style: none; padding: 0; display: grid; gap: 0.75em; font-size: var(--t-m); line-height: 1.3; }
+.ref { display: block; padding-block: calc(var(--u) * 1.5); border-top: 1px solid var(--c-line); }
+.ref a { font-size: var(--t-m); line-height: 1.25; }
+.ref small { display: block; margin-top: 0.4em; font-size: var(--t-s); color: var(--c-muted); }
+.page__note { grid-column: 1 / -1; font-size: var(--t-s); color: var(--c-muted); max-width: 60ch; }
+
+/* Phones: composed, not squeezed. Earth rides high, title below it. */
+@media (max-width: 767px) {
+  .hud__now, .hud__breaths, .hud__comma { display: none; }
+  /* The reading must not pass for a measurement, so its note keeps a line of its own. */
+  .hud__reading-note { display: block; text-align: right; line-height: 1.1; }
+  .hud { gap: 0.5rem; }
+  .hud__left { flex: none; }
+  .tick { width: 1.5rem; }
+  .tick::before { width: 0.8rem; }
+  .hud__right { gap: calc(var(--u) * 1.5); }
+  .stage__in { grid-template-columns: repeat(6, minmax(0, 1fr)); padding-top: calc(var(--u) * 8); }
+  #ch-1 .title, #ch-1 .voice { grid-column: 1 / -1; }
+  #ch-2 .title, #ch-2 .voice, #ch-2 .facts { grid-column: 1 / -1; }
+  #ch-2 .stage__in { grid-template-rows: auto 1fr auto; row-gap: calc(var(--u) * 2); }
+  #ch-2 .voice { align-self: center; }
+  #ch-2 .facts { gap: var(--u); }
+  #ch-3 { --scrim: linear-gradient(180deg, rgb(3 5 7 / 0.42) 0%, transparent 32%, transparent 44%, rgb(3 5 7 / 0.84) 62%, rgb(3 5 7 / 0.9) 100%); }
+  #ch-3 .title { grid-column: 1 / -1; }
+  #ch-3 .labels { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--u) var(--gutter); }
+  #ch-4 { --scrim: linear-gradient(180deg, rgb(3 5 7 / 0.58) 0%, transparent 34%, transparent 46%, rgb(3 5 7 / 0.86) 64%, rgb(3 5 7 / 0.92) 100%); }
+  .turn { grid-column: 1 / -1; }
+  #ch-4 .stage__in { grid-template-rows: auto 1fr auto auto; }
+  #ch-4 .gauge { grid-column: 1 / -1; grid-row: 3; display: flex; gap: var(--u); flex-wrap: wrap; }
+  .gauge li { padding-left: 0; }
+  .gauge li::before { display: none; }
+  #ch-4 .facts { grid-column: 1 / -1; grid-row: 4; gap: var(--u); }
+  #ch-5 .title { grid-column: 1 / -1; font-size: clamp(2.6rem, 12.6vw, 4.2rem); }
+  #ch-5 .fact { grid-column: 1 / span 4; }
+  #ch-6 .title, #ch-6 .solutions, #ch-6 .facts { grid-column: 1 / -1; }
+  #ch-6 .stage__in { grid-template-rows: auto auto 1fr; row-gap: calc(var(--u) * 2); }
+  /* On a phone the last line crosses the sun, so it carries its own shade. */
+  #ch-6 .solutions { font-size: var(--t-body); gap: 0.2em; text-shadow: 0 0 0.5em rgb(3 5 7 / 0.6); }
+  #ch-6 .facts { grid-template-columns: 1fr; gap: var(--u); }
+  #ch-7 .stage__in { align-content: end; row-gap: calc(var(--u) * 3); }
+  #ch-7 .title { grid-column: 1 / -1; }
+  .page__intro, .page h2, .page__body { grid-column: 1 / -1; }
+  .page { row-gap: calc(var(--u) * 6); grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .page h2 { position: static; margin-bottom: calc(var(--u) * 3); }
+  .page__top { min-height: calc(100svh - var(--u) * 22); }
+  .fact { font-size: 0.8125rem; line-height: 1.42; }
+  html:not(.motion) .stage__in { row-gap: calc(var(--u) * 4); }
+}
